@@ -57,8 +57,8 @@ game.getLocationInformation = () => {
  * @returns {String} - The location the player is in after executing this function
  */
 game.goToLocation = locationName => {
-    for(location in locationName) {
-        
+    for(location of locationName) {
+        if(${location.events.} == location)
     }
 };
 
