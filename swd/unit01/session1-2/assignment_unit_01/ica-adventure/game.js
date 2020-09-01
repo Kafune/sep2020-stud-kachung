@@ -28,7 +28,7 @@ let map = {
  * @returns {Array} 
  */
 game.getInventory = () => {    
-    
+    return player["items"];
 };
 
 /**
@@ -36,7 +36,7 @@ game.getInventory = () => {
  * @returns {Array} 
  */
 game.getItems = () => {
-   
+   return map["items"];
 }
 /**
  * Returns an object containing the description and the 
@@ -57,7 +57,9 @@ game.getLocationInformation = () => {
  * @returns {String} - The location the player is in after executing this function
  */
 game.goToLocation = locationName => {
-    
+    for(location in locationName) {
+        
+    }
 };
 
 /**
