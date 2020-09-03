@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <style>
+
+      .notShown {
+         display: none;
+      }
+
+      .tooLong {
+         border: solid red 4px;
+      }
+
+
+
+   </style>
+</head>
+<body>
+
+   <h1>5 Tweet your heart out!</h1>
+   <hr>
+   <div id="tweetListContainer">
+      <h3>Your tweets:</h3>
+      <ol id="tweetList">
+         <li>
+            <b><i>Bug Bunny:</i></b><br>
+            "This is my example tweet"
+            <hr>
+         </li>
+      </ol>
+   </div>
+   <hr>
+   <h3>Create a new tweet:</h3>
+   <div id="tweetFormContainer">
+      <form id="tweetForm" action="#">
+      <div>
+         <input id="authorName" name="author" placeholder="Your name...">
+      </div>
+      <div>
+         <textarea id="tweetText" name="tweet" rows="1" cols="35" placeholder="Your tweet..."></textarea>
+      </div>
+      <div id="counterDiv" class="notShown">
+         chars: <span id="characterCounter">0</span>
+      </div>
+      <input id="photoFile" class="notShown" type="file">
+      <div id="buttonsDiv" class="notShown">
+         <input type="button" id="photoButton" value="Photo...">
+         <input type="submit" id="sendButton" value="Send tweet">
+      </div>
+      </form>
+   </div>
+
+</body>
+<script>
+
+   function $ (query) {
+      return document.querySelector(query);
+   }
+
+   const tweetText = $('#tweetText');
+   const authorName = $('#authorName');
+   const photoButton = $('#photoButton');
+   const sendButton = $('#sendButton');
+   const counterDiv = $('#counterDiv');
+   const buttonsDiv = $('#buttonsDiv');
+   const tweetForm = $('#tweetForm');
+   const tweetListContainer = $('tweetListContainer');
+   
+   console.log('authorName', authorName);
+
+   function userFocus () {
+         tweetText.rows = 4;
+         buttonsDiv.classList.remove('notShown');
+         counterDiv.classList.remove('notShown');
+
+         checkTweetText();
+   }
+
+   tweetText.addEventListener('focus', userFocus);
+   authorName.addEventListener('focus', userFocus);
+   photoButton.addEventListener('click', showPhotoFileUpload);
+   tweetForm.addEventListener('submit', function(e) {
+      e.preventDefault();
+
+      console.log(e.target['author'].value);
+
+      const author = e.target['author'].value;
+      const tweet = e.target['tweet'].value;
+
+      let newEl = document.createElement('li');
+      newEl.innerHTML = `<strong><em>${author}</em></strong><br>${tweet}<hr><li>`; //Template literal
+      tweetList.appendChild(newEl);
+      
+      // let newTweet = `<li><b><i>Bug Bunny:</i></b><br>
+      //       "This is my example tweet"
+      //       <hr>
+      //    </li>`;
+      //    tweetList.insertAdjacentHTML('beforeend', newTweet);
+   });
+
+   function showPhotoFileUpload() {
+      $('#photoFile').classList.remove('notShown');
+      $('#photoButton').classList.add('notShown')
+   }
+
+   function checkTweetText() {
+      const tweetLength = tweetText.value.length;
+      counterDiv.innerHTML = tweetLength;
+
+      console.log(tweetLength);
+
+      sendButton.disabled = true;
+      if(tweetLength > 140) {
+         tweetText.classList.add('tooLong');
+         sendButton.disabled = true;
+      } else {
+         tweetText.classList.remove('tooLong');
+         sendButton.disabled = false;
+      }
+
+      if(tweetText.value.trim().length == 0) {
+         sendButton.disabled = true;
+      }
+   }
+
+   tweetText.addEventListener('input', checkTweetText);
+
+
+// Fira code, VS Code ligatures aanzetten in preferences, shades of purple
+</script>
+</html>
