@@ -58,13 +58,11 @@ game.getLocationInformation = () => {
  */
 game.goToLocation = locationName => {
     let {exits} = map[player.location];
-    for(let places of {exits}) {
+    for(let places in {exits}) {
         // console.log({exits})
-        console.log(`${exits[places]}`)
-        // console.log(places)
-        // console.log(`${places}`)
-        if(Object.values({exits}).includes(locationName)) {
-            player['location'] = places;
+        // console.log(`${exits}`.includes(locationName))
+        if(`${exits}`.includes(locationName)) {
+            player['location'] = locationName;
             return player['location'];
         } else {
             return "Location does not exist";
@@ -91,7 +89,7 @@ game.takeItem = (itemName) => {
         // console.log(`${map[player.location]['items'][items]}`);
         // console.log(`${itemList}`, `${itemList[items]}`);
         // console.log(itemList);
-        if(Object.values({items}).includes(itemName)) {
+        if(`${items}`.includes(itemName)) {
             console.log("ja");
             //kopieer eerst de item naar de player inventory
             Object.assign(player['items'], {items});
