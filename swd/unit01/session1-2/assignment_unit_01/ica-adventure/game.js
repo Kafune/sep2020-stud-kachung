@@ -80,26 +80,21 @@ game.goToLocation = locationName => {
  * the string 'nothing'
  */
 
- //TODO: afmaken
+ //TODO: item weghalen van array
 game.takeItem = (itemName) => {
     let {items} = map[player.location];
     for(const item in {items}) {
-        console.log({items});
 
-        console.log(item);
-
-        // console.log(`${map[player.location]['items'][items]}`);
-        // console.log(`${itemList}`, `${itemList[items]}`);
-        // console.log(itemList);
         if(`${items}`.includes(itemName)) {
-            console.log("ja");
             //kopieer eerst de item naar de player inventory
-            Object.assign(player['items'], {items});
+            console.log(player['items'])
+            console.log(items)
+            player['items'].push(itemName);
             //haal deze dan van de items array weg.
-            delete map[player.location]['items'][`${items}`];
+           map[player.location]['items'][itemName];
             
             //return de opgepakte item
-            return {items};
+            return itemName;
         } else {
             return "nothing";
         }
