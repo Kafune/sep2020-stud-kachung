@@ -79,6 +79,8 @@ game.goToLocation = locationName => {
  * @returns {String} - The name of the item that was taken. If nothing was taken, it returns 
  * the string 'nothing'
  */
+
+ //TODO: afmaken
 game.takeItem = (itemName) => {
     let {items} = map[player.location];
     for(const item in {items}) {
