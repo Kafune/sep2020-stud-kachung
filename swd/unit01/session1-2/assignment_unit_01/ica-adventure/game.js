@@ -58,7 +58,6 @@ game.getLocationInformation = () => {
  */
 game.goToLocation = locationName => {
     let {exits} = map[player.location];
-    for(let places in {exits}) {
         // console.log({exits})
         // console.log(`${exits}`.includes(locationName))
         if(`${exits}`.includes(locationName)) {
@@ -67,7 +66,6 @@ game.goToLocation = locationName => {
         } else {
             return "Location does not exist";
         }
-    }
 };
 
 /**
@@ -80,25 +78,28 @@ game.goToLocation = locationName => {
  * the string 'nothing'
  */
 
- //TODO: item weghalen van array
 game.takeItem = (itemName) => {
     let {items} = map[player.location];
-    for(const item in {items}) {
-
         if(`${items}`.includes(itemName)) {
             //kopieer eerst de item naar de player inventory
-            console.log(player['items'])
-            console.log(items)
+            // console.log(player['items'])
+            // console.log(items)
             player['items'].push(itemName);
-            //haal deze dan van de items array weg.
-           map[player.location]['items'][itemName];
-            
+
+            //haal deze item dan van de items array weg. Zoek eerst de index van de array op, en verwijder deze.
+            // map[player.location]['items'];
+            let itemArray = map[player.location]['items'];
+            let itemIndex = itemArray.indexOf(itemName);
+
+            itemArray.splice(itemIndex);
+            console.log(itemArray.indexOf(itemName));
+
+                        
             //return de opgepakte item
             return itemName;
         } else {
-            return "nothing";
+            return "no item";
         }
-    }
 };
 
 
