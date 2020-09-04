@@ -36,7 +36,7 @@ game.getInventory = () => {
  * @returns {Array} 
  */
 game.getItems = () => {
-   return map["items"];
+    return map[player.location]['items'];
 }
 /**
  * Returns an object containing the description and the 
@@ -44,7 +44,7 @@ game.getItems = () => {
  * @returns {Object}
  */
 game.getLocationInformation = () => {
-    
+    return map[player.location];
 };
 
 /**
@@ -57,8 +57,18 @@ game.getLocationInformation = () => {
  * @returns {String} - The location the player is in after executing this function
  */
 game.goToLocation = locationName => {
-    for(location of locationName) {
-        if(${location.events.} == location)
+    let {exits} = map[player.location];
+    for(let places of {exits}) {
+        // console.log({exits})
+        console.log(`${exits[places]}`)
+        // console.log(places)
+        // console.log(`${places}`)
+        if(Object.values({exits}).includes(locationName)) {
+            player['location'] = places;
+            return player['location'];
+        } else {
+            return "Location does not exist";
+        }
     }
 };
 
@@ -72,7 +82,28 @@ game.goToLocation = locationName => {
  * the string 'nothing'
  */
 game.takeItem = (itemName) => {
-    
+    let {items} = map[player.location];
+    for(const item in {items}) {
+        console.log({items});
+
+        console.log(item);
+
+        // console.log(`${map[player.location]['items'][items]}`);
+        // console.log(`${itemList}`, `${itemList[items]}`);
+        // console.log(itemList);
+        if(Object.values({items}).includes(itemName)) {
+            console.log("ja");
+            //kopieer eerst de item naar de player inventory
+            Object.assign(player['items'], {items});
+            //haal deze dan van de items array weg.
+            delete map[player.location]['items'][`${items}`];
+            
+            //return de opgepakte item
+            return {items};
+        } else {
+            return "nothing";
+        }
+    }
 };
 
 
