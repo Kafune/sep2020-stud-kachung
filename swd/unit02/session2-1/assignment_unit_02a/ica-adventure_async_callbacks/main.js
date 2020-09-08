@@ -2,6 +2,7 @@
 
 const readline = require('readline');
 const game = require('./game');
+const { doesNotMatch } = require('assert');
 
 const rl = readline.createInterface(process.stdin, process.stdout);
 
@@ -72,7 +73,13 @@ function execute(command, argument, next) {
             // ---------------------- PART B) -----------------------------//
             //Below is the old synchronous code, but game.goToLocation is 
             //asynchronous now. Replace this code.
-            const locationDescription = game.goToLocation(argument);
+            const locationDescription = game.goToLocation(argument, (error, locationDescription) => {
+                if(error) {
+                    throw new Error(error);
+                    // return next(error, null);
+                }
+                console.log(locationDescription);
+            });
             response = `you are in ${locationDescription}`;
             return response;
 

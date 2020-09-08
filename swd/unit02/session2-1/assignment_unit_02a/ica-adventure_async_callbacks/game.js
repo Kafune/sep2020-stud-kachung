@@ -37,28 +37,35 @@ let map = {
  * e.g done(null, locationDescription).
  * 
  */
-const gotoLocationCallback = (randomFunction) => {
     game.goToLocation = (locationName, done) => {
         // let {exits} = map[player.location];
         // if(exits.includes(locationName)) {
         //     player['location'] = locationName;
         //     return player['location'];
         // } else {
+        
+        //check eerst of er een plek in de exit array staat
+        //check daarna of de plek in de map array bestaat.
+        //check als laatst of deze in de map server bestaat. 
+        
             request('http://localhost:3000/' + locationName, (error, data) => {
                 if(error) {
-                    console.error('error: ' + error)
+                    return done(error, null);
                 }
-                try {
+
+                try { //mogelijk niet nodig
                 const result = JSON.parse(data);
-                randomFunction(error, result);
+
+                const locationDescription = result.description;
+
+                done(null, result);
+                //push eventueel naar de map array.
                 } catch(error) {
-                    randomFunction(error);
+                    done(error, null);
                 };
             });
         // }
     };
-
-};
 
 // gotoLocationCallback((error, object) => {
 //     if(error) {
