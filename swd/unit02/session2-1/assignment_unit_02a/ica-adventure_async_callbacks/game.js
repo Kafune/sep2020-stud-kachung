@@ -12,7 +12,7 @@ let player = {
 let map = {
     town: {
         description: 'a town',
-        items: ['coin','sword','axe'],
+        items: ['coin', 'sword', 'axe'],
         exits: ['forest', 'mountain']
     }
 };
@@ -37,35 +37,32 @@ let map = {
  * e.g done(null, locationDescription).
  * 
  */
-    game.goToLocation = (locationName, done) => {
-        // let {exits} = map[player.location];
-        // if(exits.includes(locationName)) {
-        //     player['location'] = locationName;
-        //     return player['location'];
-        // } else {
-        
-        //check eerst of er een plek in de exit array staat
-        //check daarna of de plek in de map array bestaat.
-        //check als laatst of deze in de map server bestaat. 
-        
-            request('http://localhost:3000/' + locationName, (error, data) => {
-                if(error) {
-                    return done(error, null);
-                }
+game.goToLocation = (locationName, done) => {
+    if(map[locationName]) {
+        done(null, locationName);
+    }
 
-                try { //mogelijk niet nodig
-                const result = JSON.parse(data);
+    request('http://localhost:3000/' + locationName, (error, _, data) => {
+        if (error) {
+            done(error, null);
+        }
 
-                const locationDescription = result.description;
+        try {
+            const result = JSON.parse(data);
+            map[locationName] = result;
+            map[locationName].description = result.description;
 
-                done(null, result);
-                //push eventueel naar de map array.
-                } catch(error) {
-                    done(error, null);
-                };
-            });
-        // }
-    };
+            // console.log(map);
+            player.location = map[locationName];
+            done(null, result.description);
+
+        } catch (error) {
+            done(error, null);
+        };
+    });
+    // }
+
+};
 
 // gotoLocationCallback((error, object) => {
 //     if(error) {
@@ -80,7 +77,7 @@ let map = {
  */
 game.getLocationInformation = () => {
     const playerLocation = map[player.location];
-    
+
     let locationInfo = {
         description: playerLocation.description,
         exits: playerLocation.exits

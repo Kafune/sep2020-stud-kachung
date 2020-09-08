@@ -75,15 +75,13 @@ function execute(command, argument, next) {
             //asynchronous now. Replace this code.
             const locationDescription = game.goToLocation(argument, (error, locationDescription) => {
                 if(error) {
-                    throw new Error(error);
-                    // return next(error, null);
+                    // throw new error(error);
+                    console.log(error);
                 }
                 console.log(locationDescription);
             });
             response = `you are in ${locationDescription}`;
             return response;
-
-            gotoLocationCallback()
             // -------------------------------------------------------------//
         default:
             //Here you can see also see how we  deal with errors.
