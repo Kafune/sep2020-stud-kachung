@@ -7,15 +7,16 @@ window.onload = function initializeApp() {
 
   // The form-validator uses functions to check if a field has valid input.
   // This object defines which checker functions work for which form fields.
+
   const theFormCheckers = {
-    voornaam:   checkBoth( hasMaxLength(20) ,hasMinimumLength(3) ),
-    achternaam: checkBoth( hasMaxLength(20) ,hasMinimumLength(3) ), 
-    postcode: isaPostCode,  // isaPostCode is a checker defined in this file.
-    huisnummer: isRequired
+    voornaam:   message(hasMaxLength(20),"Lange voornamen passen niet op het vliegticket"),
+    achternaam: hasMaxLength(20),  
+    postcode:   message(isaPostCode, "Dit moeten vier cijfers, en dan twee letters zijn"),  
+    huisnummer: message(isRequired, "Wat jammer dat er geen huisnummer is :-(")
   };
   theForm.addEventListener(
     "submit",
-    makeFormValidator(theFormCheckers, handleFormSubmit)
+    makeFormValidator(theFormCheckers, handleFormSubmit, handleErrors)
   );
 };
 
@@ -47,4 +48,27 @@ function nameLengthChecker(input) {
     return false;
   }
   return true;
+}
+
+function handleErrors(checkerFailures) {
+  theErrorReport.hidden = false;
+  const errorList = document.getElementById("error-messages");
+  errorList.innerHTML = ""
+
+  checkerFailures.map(([name, failure]) => {
+    if (failure !== false) {
+      return [name, failure];
+    } else {
+      return [name, "Dit veld is niet correct ingevuld"];
+    }
+  }).map(([name, message]) => {
+    const messageHtml = `<b>${name}:</b> ` + message;
+    return messageHtml;
+  }).map(messageHtml => {
+    const listItem = document.createElement("li");
+    listItem.innerHTML = messageHtml;
+    return listItem;
+  }).forEach(item => {
+    errorList.appendChild(item);
+  });
 }
