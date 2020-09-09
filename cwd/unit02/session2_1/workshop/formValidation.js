@@ -54,3 +54,39 @@ function isRequired(value) {
   console.log(`Checked required field «${value}»:`, result);
   return result;
 }
+
+function hasMaxLength(maxLength) {
+  return (input) => {
+    if(input.length > maxLength) {
+      return false;
+    }
+    return true;
+  }
+}
+
+function hasMinimumLength(minLength) {
+  return (input) => {
+    if(input.length < minLength) {
+      return false;
+    }
+    return true;
+  }
+}
+
+function checkBoth(checker1, checker2) {
+  return (input) => {
+    return checker1(input) && checker2(input);
+  }
+}
+
+const checkAll = (...checkers) => value => checkers.every(check => check(value));
+
+checkAll(hasMaxLength(29), isRequired, hasMinimumLength(2));
+
+function checkAll(...checkers) {
+  return (input) => {
+    return checkers.every(check => {
+      return check(input);
+    })
+  }
+}
