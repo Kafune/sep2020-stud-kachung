@@ -1,0 +1,25 @@
+<div id="quizDiv" style="padding: 20px; background-color: #aaf">
+    Quiz:
+    </div>
+    
+    <script>
+    
+    const quizComponent2 = {
+      question:     "Wat is de codetaal die we nu schrijven?",
+      answer:       "Javascript",
+      render:       function() {
+        const theDiv = document.getElementById("quizDiv")
+        theDiv.innerHTML += `<button>${this.question}</button>`;
+        theDiv.lastChild.addEventListener( "click", this.clickHandler )
+      },
+      clickHandler: function() {
+          let antwoord = () => {
+              return this.answer
+          }
+
+        alert("Het antwoord is:\n" + antwoord);
+      }
+    }
+    
+    quizComponent2.render();
+    </script>
