@@ -1,4 +1,5 @@
 const fetch = require('node-fetch');
+const { request } = require('express');
 
 let game = {};
 
@@ -32,7 +33,27 @@ let map = {
  */
 game.goToLocation = locationName => {
     //B)
-    
+    return new Promise((resolve, reject) => {
+        if (map[locationName]) {
+            resolve(locationName);
+        }
+
+        fetch('http://localhost:3000/' + locationName).then(response => {
+            return response.json();
+        }).then(data => {
+            try {
+                // console.log(data);
+                map[locationName] = data;
+                map[locationName].description = data.description;
+                player.location = map[locationName];
+                console.log(map);
+                resolve(data);
+            } catch {
+                // reject(data)
+            }
+        })
+
+    });
 };
 
 /**
@@ -43,7 +64,7 @@ game.goToLocation = locationName => {
  */
 game.getLocationInformation = () => {
     const playerLocation = map[player.location];
-    
+
     let locationInfo = {
         description: playerLocation.description,
         exits: playerLocation.exits
