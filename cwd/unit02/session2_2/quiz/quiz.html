@@ -3,6 +3,20 @@
     </div>
     
     <script>
+
+const quizComponent1 = {
+  question:     "Hoe heet de jongste zoon van Harry " +
+                "Potter in deel 7 en 8?",
+  answer:       "Albus Severus",
+  render:       function() {
+    const theDiv = document.getElementById("quizDiv")
+    theDiv.innerHTML += `<button>${this.question}</button>`;
+    theDiv.firstChild.addEventListener( "click", this.clickHandler )
+  },
+  clickHandler: function() {
+    alert("Het antwoord is:\n"+ this.answer);
+  }
+}
     
     const quizComponent2 = {
       question:     "Wat is de codetaal die we nu schrijven?",
@@ -10,16 +24,13 @@
       render:       function() {
         const theDiv = document.getElementById("quizDiv")
         theDiv.innerHTML += `<button>${this.question}</button>`;
-        theDiv.lastChild.addEventListener( "click", this.clickHandler )
+        theDiv.lastChild.addEventListener( "click", () => this.clickHandler() )
       },
       clickHandler: function() {
-          let antwoord = () => {
-              return this.answer
-          }
-
-        alert("Het antwoord is:\n" + antwoord);
+        alert("Het antwoord is:\n" + this.answer);
       }
     }
     
+    quizComponent1.render();
     quizComponent2.render();
     </script>
