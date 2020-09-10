@@ -31,9 +31,20 @@ let map = {
  * received json is not valid.
  * 
  */
-game.goToLocation = locationName => {
+game.goToLocation = async locationName => {
     //B)
-    
+    if(map[locationName]) {
+         return locationName;
+    }
+
+    let request = await fetch('http://localhost:3000/' + locationName);
+    let response = await request.json();
+
+    map[locationName] = response;
+    map[locationName].description = response.description;
+    player.location = map[locationName];
+
+    return response;
 };
 
 /**

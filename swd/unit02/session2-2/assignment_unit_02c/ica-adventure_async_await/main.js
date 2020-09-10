@@ -12,8 +12,11 @@ rl.prompt();
 
 rl.on('line', (line) => {
     const [command, argument] = line.trim().split(' ');
-    //A) 
-    //Plaats hier de promise implementatie. 
+    execute(command, argument).then(result => {
+        //A)
+        console.log(result);
+
+    });
 
 }).on('close', function () {
    //DEFAULT ^c
@@ -39,6 +42,13 @@ async function execute(command, argument) {
         case 'goto':
         case 'g':
             //C
+            return game.goToLocation(argument).then(locationInfo => {
+                response = `you are now in ${locationInfo.description}`;
+                return response;
+            }).catch((error) => {
+                error = "Locatie bestaat niet.";
+                return error;
+            });
         default:
             let err = new Error(`The input: '${command}' is not defined`)
             err.code = COMMAND_ERROR;

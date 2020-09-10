@@ -4,6 +4,7 @@ const readline = require('readline');
 const game = require('./game');
 const { doesNotMatch } = require('assert');
 const { error } = require('console');
+const { RSA_X931_PADDING } = require('constants');
 
 const rl = readline.createInterface(process.stdin, process.stdout);
 
@@ -16,9 +17,11 @@ rl.on('line', (line) => {
     const [command, argument] = line.trim().split(' ');
     execute(command, argument).then(result => {
         //A)
-        console.log(result);
-
-    });
+        console.log(result.description);
+        return Promise.resolve(result);
+    }).catch((error) => {
+        return Promise.reject(error);
+    })
 
 }).on('close', function () {
     //DEFAULT ^c
@@ -40,15 +43,18 @@ function execute(command, argument) {
                 }, '');
 
                 return Promise.resolve(response);
+            }).catch((error) => {
+                return Promise.reject(error);
             });
         case 'goto':
         case 'g':
             //C)
-            // if (argument == null || argument === undefined);
-            // reject(`The command '${command}' needs an argument`)
-
             return game.goToLocation(argument).then(locationInfo => {
-                console.log(locationInfo);
+
+                response = `you are now in ${locationInfo.description}`;
+                return Promise.resolve(locationInfo);
+            }).catch((error) => {
+                return Promise.reject(error);
             });
         default:
             let err = new Error(`The input: '${command}' is not defined`)
