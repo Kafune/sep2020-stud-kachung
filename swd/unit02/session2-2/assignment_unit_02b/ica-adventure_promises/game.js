@@ -41,12 +41,10 @@ game.goToLocation = locationName => {
         fetch('http://localhost:3000/' + locationName).then(response => {
             return response.json();
         }).then(data => {
-            // console.log(data);
             map[locationName] = data;
-            map[locationName].description = data.description;
             player.location = map[locationName];
-            // console.log(map);
-            resolve(data);
+            map[locationName].description = data.description;
+            resolve(data.description);
         }).catch(error => {
             error = "Deze locatie bestaat niet!";
             reject(error);

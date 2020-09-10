@@ -42,6 +42,8 @@ function execute(command, argument) {
                     return allExits + `\n- ${exit}`;
                 }, '');
 
+                console.log(response);
+
                 return Promise.resolve(response);
             }).catch((error) => {
                 return Promise.reject(error);
@@ -50,7 +52,6 @@ function execute(command, argument) {
         case 'g':
             //C)
             return game.goToLocation(argument).then(locationInfo => {
-
                 response = `you are now in ${locationInfo.description}`;
                 return Promise.resolve(locationInfo);
             }).catch((error) => {
