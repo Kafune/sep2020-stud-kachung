@@ -13,10 +13,11 @@ class Ufo extends BouncingSprite {
 
 
 let player; // Deze variabele moet globaal zijn. Waarom? -> Heeft met scoping te maken. De functie createGameSprites maakt de speler aan, maar andere functies zouden hier geen toegang op krijgen.
+
 class Player extends Sprite {
   constructor() {
-    const x = 10;
-    const y = 300;
+    const x = 0;
+    const y = 400;
     const xSpeed = 0;
     const ySpeed = 0;
     super(rocketImageUrl, x, y, xSpeed, ySpeed);
@@ -24,14 +25,46 @@ class Player extends Sprite {
 
   update() {
     super.update();
-    if(this.x < 0 || this.x > Sprite.gameWidth) {
+    if(this.x < 0 || this.x > 700) {
       this.xSpeed = 0;
     }
-    // this.xSpeed = 1;
+
     this.x += this.xSpeed;
   }
+}
 
-  
+class Bullit extends CollidingSprite {
+  constructor(x, y) {
+    const xSpeed = 0;
+    const ySpeed = -8;
+    super(bullitImageUrl, x, y, xSpeed, ySpeed);
+    this.x = x;
+    this.y = y;
+
+  }
+  update() {
+    super.update();
+    if(this.y < 0 + this.height) {
+      this.remove();
+    }
+    this.y += this.ySpeed;
+  }
+
+  isCollision(otherSprite) {
+    return (
+      this.x >= otherSprite.x &&
+      this.x <= otherSprite.x + otherSprite.width &&
+      this.y >= otherSprite.y &&
+      this.y <= otherSprite.y + otherSprite.height
+    );
+  }
+
+  handleCollisionWith(otherSprite) {
+    if(otherSprite instanceof Ufo) {
+      otherSprite.remove();
+    }
+    super.remove();
+  }
 }
 
 function createGameSprites() {
@@ -62,17 +95,31 @@ function installKeyboardHandler() {
   // beschijft. Gebruik http://keycode.info/ om achter de codenamen van
   // toetsen te komen.
   document.addEventListener("keydown", event => {
-    if(event.code == "ArrowRight" || event.code == "ArrowLeft") {
-      //beweeg
+    let moveSpeed = 3;
+    if(event.code == "ArrowRight" ) {
+      moveLeft(moveSpeed);
+    }
+    if(event.code == "ArrowLeft") {
+      moveRight(moveSpeed);
     }
     if (event.code == "Space") {
       // normaal zal een browser de pagina scrollen als je op de spatiebalk
       // drukt. preventDefault() voorkomt dat.
       event.preventDefault();
+      let playerMiddlePoint = player.x + player.width / 2;
 
-      /* new Bullit( ??, ?? ); */
+      new Bullit( playerMiddlePoint, player.y );
     }
   });
+}
+
+function moveLeft(moveSpeed) {
+  player.xSpeed = moveSpeed;
+
+}
+
+function moveRight(moveSpeed) {
+  player.xSpeed = -moveSpeed;
 }
 
 const startButton = document.getElementById("startButton");
