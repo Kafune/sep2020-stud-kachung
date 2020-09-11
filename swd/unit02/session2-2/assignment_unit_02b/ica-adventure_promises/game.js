@@ -44,7 +44,7 @@ game.goToLocation = locationName => {
             map[locationName] = data;
             player.location = map[locationName];
             map[locationName].description = data.description;
-            resolve(data.description);
+            resolve(data);
         }).catch(error => {
             error = "Deze locatie bestaat niet!";
             reject(error);
