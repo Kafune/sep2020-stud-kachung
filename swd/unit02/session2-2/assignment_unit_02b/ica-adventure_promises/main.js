@@ -15,9 +15,20 @@ rl.prompt();
 
 rl.on('line', (line) => {
     const [command, argument] = line.trim().split(' ');
-    execute(command, argument).then(result => {
+    execute(command, argument).then(error, result => {
         //A)
-        console.log(result.description);
+        if (error) {
+            if (error.code && error.code === COMMAND_ERROR) {
+                console.log(error.message);
+                return rl.prompt();
+            } 
+            else {
+                //Whenever we encounter an error we don't know how to deal with,
+                //we throw it, so we can crash the program.
+                throw error;
+            }
+        } 
+        console.log(result);   
         return Promise.resolve(result);
     }).catch((error) => {
         return Promise.reject(error);
