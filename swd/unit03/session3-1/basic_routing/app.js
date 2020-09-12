@@ -6,7 +6,10 @@ app.get('/', (req, res) => {
 });
 
 app.post('/', (req, res) => {
-    res.send('Got a POST request')
+    // res.send('Got a POST request')
+    res.json({
+        naam: 'kachung'
+    });
 });
 
 app.put('/user', (req, res) => {
