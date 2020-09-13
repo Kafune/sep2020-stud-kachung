@@ -41,7 +41,6 @@ class Game {
                 this._player.location = locationName;
             }
         }
-     
         return this._map[this._player.location].description;
     }
 

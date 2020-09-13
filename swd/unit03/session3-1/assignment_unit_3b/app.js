@@ -23,14 +23,14 @@ app.post('/action/:player/goto', async (req, res) => {
    //TODO
    const fileName = path.join(gameFilesFolderName, `${req.params.player}.json`);
    const fileContent = await promiseWrappers.readFileP(fileName);
-   const gameState = JSON.parse(fileContent);
-   const game = new Game(gameState);
-   const getPlayerInfo = game.state;
-   const destination = await game.goToLocation(getPlayerInfo.map[req.query.location]);
-//    console.log(getPlayerInfo.map[req.query.location]);
-    console.log(destination);
-   res.json(destination);
-   
+   const parseFile = JSON.parse(fileContent);
+   const game = new Game(parseFile);
+   await game.goToLocation(req.query.location);
+   const getPlayerInfo = await game.state;
+   const saveToFile = await promiseWrappers.writeFileP(fileName, JSON.stringify(getPlayerInfo));
+   console.log(getPlayerInfo.map);
+    // res.json(saveToFile);
+    res.send(saveToFile);
 });
 
 const server = app.listen(3000, () => {
