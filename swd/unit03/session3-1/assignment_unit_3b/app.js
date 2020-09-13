@@ -21,6 +21,15 @@ app.get('/action/:player/where', async (req, res) => {
 
 app.post('/action/:player/goto', async (req, res) => {
    //TODO
+   const fileName = path.join(gameFilesFolderName, `${req.params.player}.json`);
+   const fileContent = await promiseWrappers.readFileP(fileName);
+   const gameState = JSON.parse(fileContent);
+   const game = new Game(gameState);
+   const getPlayerInfo = game.state;
+   const destination = await game.goToLocation(getPlayerInfo.map[req.query.location]);
+//    console.log(getPlayerInfo.map[req.query.location]);
+    console.log(destination);
+   res.json(destination);
    
 });
 
