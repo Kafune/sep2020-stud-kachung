@@ -51,6 +51,23 @@ game.goToLocation = locationName => {
         })
 
     });
+    
+    if (map[locationName]) {
+            return Promise.resolve(locationName);
+      }
+    
+    return fetch('http://localhost:3000/' + locationName).then(response => {
+            return response.json();
+        }).then(data => {
+            map[locationName] = data;
+            player.location = map[locationName];
+            map[locationName].description = data.description;
+            return player.location;
+        }).catch(error => {
+            error = "Deze locatie bestaat niet!";
+            reject(error);
+        })
+
 };
 
 /**
