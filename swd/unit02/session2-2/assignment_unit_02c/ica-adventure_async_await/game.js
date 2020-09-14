@@ -33,6 +33,10 @@ let map = {
  */
 game.goToLocation = async locationName => {
     //B)
+    // if(locationName == undefined || locationName == null) {
+    //     return Promise.reject("Ongeldige invoer!");
+    // }
+
     if(map[locationName]) {
          return locationName;
     }
@@ -44,7 +48,7 @@ game.goToLocation = async locationName => {
     map[locationName].description = response.description;
     player.location = map[locationName];
 
-    return response;
+    return player.location;
 };
 
 /**

@@ -1,5 +1,6 @@
 'use strict';
 
+const { RSA_X931_PADDING } = require('constants');
 const readline = require('readline');
 const game = require('./game');
 
@@ -15,40 +16,57 @@ rl.on('line', (line) => {
     execute(command, argument).then(result => {
         //A)
         console.log(result);
-
+        return Promise.resolve(result);
+    }).catch((error) => {
+        if (error) {
+            if (error.code === COMMAND_ERROR) {
+                console.log(error.message);
+            } else {
+                //Whenever we encounter an error we don't know how to deal with,
+                //we throw it, so we can crash the program.
+                throw error;
+            }
+        }
     });
 
 }).on('close', function () {
-   //DEFAULT ^c
-   console.log('Leaving the game');
-   process.exit(0);
+    //DEFAULT ^c
+    console.log('Leaving the game');
+    process.exit(0);
 });
 
 async function execute(command, argument) {
     let response;
     switch (command) {
         case 'where':
-        case 'w': 
+        case 'w':
             const locationInformation = await game.getLocationInformation()
             response = `you are in ${locationInformation.description}`;
             response += '\nand you can go to these location(s): '
-                
-            response += locationInformation.exits.reduce((allExits, exit)  => {
+
+            response += locationInformation.exits.reduce((allExits, exit) => {
                 return allExits + `\n- ${exit}`;
             }, '');
-                
+
             return response;
-            
+
         case 'goto':
         case 'g':
             //C
-            return game.goToLocation(argument).then(locationInfo => {
-                response = `you are now in ${locationInfo.description}`;
-                return response;
-            }).catch((error) => {
-                error = "Locatie bestaat niet.";
-                return error;
-            });
+            try {
+                let destination = await game.goToLocation(argument);
+                let request = await destination();
+                console.log(request);
+            } catch (error) {
+                error = "Ongeldige invoer!";
+            }
+
+
+
+        // .then(). => {
+        //     error = "Locatie bestaat niet.";
+        //     return error;
+        // });
         default:
             let err = new Error(`The input: '${command}' is not defined`)
             err.code = COMMAND_ERROR;

@@ -26,10 +26,25 @@ app.get('/action/:player/where', async (req, res) => {
 
 app.post('/action/:player/goto', async (req, res) => {
    //Paste your implementation from assignment unit 3b here
+   const fileName = path.join(gameFilesFolderName, `${req.params.player}.json`);
+   const fileContent = await promiseWrappers.readFileP(fileName);
+   const parseFile = JSON.parse(fileContent);
+   const game = new Game(parseFile);
+   await game.goToLocation(req.query.location);
+   const getPlayerInfo = await game.state;
+   await promiseWrappers.writeFileP(fileName, JSON.stringify(getPlayerInfo));
+   res.send(getPlayerInfo);
+   console.log(getPlayerInfo.map);
 });
 
 app.post('/action/:player/arise', async (req, res) => {
-  
+    const fileName = path.join(gameFilesFolderName, `${req.params.player}.json`);
+    const fileContent = await promiseWrappers.readFileP(fileName);
+    const parseFile = JSON.parse(fileContent);
+    const game = new Game(parseFile);
+    const playerNewStart = await game.startNew(req.body.start, req.body.inventory);
+    const getPlayerInfo = await game.state;
+    res.send(playerNewStart);
 });
 
 const server = app.listen(3000, () => {
