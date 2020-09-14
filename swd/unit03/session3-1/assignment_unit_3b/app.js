@@ -28,9 +28,8 @@ app.post('/action/:player/goto', async (req, res) => {
    await game.goToLocation(req.query.location);
    const getPlayerInfo = await game.state;
    const saveToFile = await promiseWrappers.writeFileP(fileName, JSON.stringify(getPlayerInfo));
+   res.send(saveToFile);
    console.log(getPlayerInfo.map);
-    // res.json(saveToFile);
-    res.send(saveToFile);
 });
 
 const server = app.listen(3000, () => {
