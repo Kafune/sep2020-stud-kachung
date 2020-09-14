@@ -33,28 +33,13 @@ let map = {
  */
 game.goToLocation = locationName => {
     //B)
-    return new Promise((resolve, reject) => {
-        if (map[locationName]) {
-            resolve(locationName);
-        }
+    if(locationName == undefined || locationName == null) {
+        return Promise.reject("Ongeldige invoer!");
+    }
 
-        fetch('http://localhost:3000/' + locationName).then(response => {
-            return response.json();
-        }).then(data => {
-            map[locationName] = data;
-            player.location = map[locationName];
-            map[locationName].description = data.description;
-            resolve(data);
-        }).catch(error => {
-            error = "Deze locatie bestaat niet!";
-            reject(error);
-        })
-
-    });
-    
     if (map[locationName]) {
             return Promise.resolve(locationName);
-      }
+    }
     
     return fetch('http://localhost:3000/' + locationName).then(response => {
             return response.json();
@@ -65,7 +50,7 @@ game.goToLocation = locationName => {
             return player.location;
         }).catch(error => {
             error = "Deze locatie bestaat niet!";
-            reject(error);
+            return error;
         })
 
 };
