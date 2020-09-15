@@ -1,5 +1,5 @@
-var express = require('express')
-var games = express.Router();
+const express = require('express')
+const games = express.Router();
 
 const promiseWrappers = require('./../promise-wrappers');
 

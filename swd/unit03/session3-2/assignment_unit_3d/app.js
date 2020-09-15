@@ -74,7 +74,7 @@ app.post('/action/:player/arise', async (req, res) => {
 app.post('/createPlayerFile', async(req, res) => {
     try {
       const fileLocation = gameFilesFolderName + `/${req.body.name}.json`;
-      const newFile = await promiseWrappers.createEmptyFileP(fileLocation);
+      await promiseWrappers.createEmptyFileP(fileLocation);
       await promiseWrappers.writeFileP(fileLocation, JSON.stringify(req.body));
       res.send(req.body)
     } catch(error) {
