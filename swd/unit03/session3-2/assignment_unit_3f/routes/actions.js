@@ -1,5 +1,6 @@
 const express = require('express')
 const actionsApp = express();
+
 const actions = express.Router();
 
 const gameFileReader = async (req, res, next) => {
@@ -36,6 +37,8 @@ actionsApp.use('/:player/', gameStateReader);
 
 actions.get('/:player/where', async (req, res) => {
     const locationInformation = await req.game.getLocationInformation();
+    console.log(req.game.getLocationInformation())
+
     res.json(locationInformation);
 });
 
@@ -49,9 +52,11 @@ actions.post('/:player/goto', async (req, res) => {
    console.log(getPlayerInfo.map);
 });
 
-actions.post('/action/:player/arise', async (req, res) => {
+actions.post('/:player/arise', async (req, res) => {
   //Paste your implementation from assignment unit 3c here
   const playerNewStart = await req.game.startNew(req.body.start, req.body.inventory);
   const getPlayerInfo = await req.game.state;
   res.send(playerNewStart);
 });
+
+module.exports = actions;
