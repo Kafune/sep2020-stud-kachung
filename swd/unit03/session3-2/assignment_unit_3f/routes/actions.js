@@ -1,7 +1,12 @@
 const express = require('express')
-const actionsApp = express();
-
 const actions = express.Router();
+const Game = require('./../game.js');
+
+const path = require('path');
+const promiseWrappers = require('./../promise-wrappers');
+
+const gameFilesFolderName = 'game_files';
+
 
 const gameFileReader = async (req, res, next) => {
     //TODO D1, D2
@@ -32,8 +37,8 @@ const gameStateReader = async (req, res, next) => {
     }
 }
 
-actionsApp.use('/:player/', gameFileReader);
-actionsApp.use('/:player/', gameStateReader);
+actions.use('/:player/', gameFileReader);
+actions.use('/:player/', gameStateReader);
 
 actions.get('/:player/where', async (req, res) => {
     const locationInformation = await req.game.getLocationInformation();

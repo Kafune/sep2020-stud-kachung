@@ -1,5 +1,11 @@
 const express = require('express')
 const games = express.Router();
+const Game = require('./../game.js');
+
+const promiseWrappers = require('./../promise-wrappers');
+
+const gameFilesFolderName = 'game_files';
+
 
 games.get('/listPlayerFiles', async (req, res) => {
     const directory = await promiseWrappers.readdirP(`./`+gameFilesFolderName);
