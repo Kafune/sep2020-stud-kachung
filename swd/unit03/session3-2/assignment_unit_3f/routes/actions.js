@@ -1,4 +1,5 @@
 const express = require('express')
+const actionsApp = express();
 const actions = express.Router();
 
 const gameFileReader = async (req, res, next) => {
@@ -30,16 +31,16 @@ const gameStateReader = async (req, res, next) => {
     }
 }
 
-app.use('/action/:player/', gameFileReader);
-app.use('/action/:player/', gameStateReader);
+actionsApp.use('/:player/', gameFileReader);
+actionsApp.use('/:player/', gameStateReader);
 
-actions.get('/action/:player/where', async (req, res) => {
+actions.get('/:player/where', async (req, res) => {
     const locationInformation = await req.game.getLocationInformation();
     res.json(locationInformation);
 });
 
 
-actions.post('/action/:player/goto', async (req, res) => {
+actions.post('/:player/goto', async (req, res) => {
    //Paste your implementation from assignment unit 3c here
    await req.game.goToLocation(req.query.location);
    const getPlayerInfo = await req.game.state;

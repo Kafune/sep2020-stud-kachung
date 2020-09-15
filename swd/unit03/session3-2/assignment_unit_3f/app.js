@@ -2,8 +2,8 @@
 
 const express = require('express');
 const Game = require('./game.js');
-const promiseWrappers = require('./promise-wrappers');
-const path = require('path');
+// const promiseWrappers = require('./promise-wrappers');
+// const path = require('path');
 const bodyParser = require('body-parser');
 
 const app = express();
@@ -14,16 +14,9 @@ const actions = require ('./routes/actions');
 // const gameFilesFolderName = 'game_files';
 
 
-
-
-
 app.use(bodyParser.json());
 app.use('/games', games);
-app.use('actions'. actions);
-
-
-
-
+app.use('/action', actions);
 
 
 const server = app.listen(3000, () => {
