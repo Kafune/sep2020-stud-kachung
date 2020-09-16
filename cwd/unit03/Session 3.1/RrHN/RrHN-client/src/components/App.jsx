@@ -2,6 +2,8 @@ import React from 'react'
 
 import frontPageItems from '../frontpageData';
 
+import ListItem from './ListItem';
+
 export class RrHNApp extends React.Component {
    constructor(props) {
       super(props);
@@ -10,9 +12,44 @@ export class RrHNApp extends React.Component {
       }
    }
    render() {
+      const newFn = () => console.log("asdf");
+      // const lijst = [{ naam: "Rowan" }, { naam: "Patrick" }];
+      // const lijstmeth1 = [<h1>{"Rowan"}</h1>, <h1>{"Patrick"}</h1>];
+      const listItems = this.state.items(item => {
+         <ListItem item={item} onClick={newFn}/>
+      })
+
       return <div className="App">
-         <p>Welcome to RRHN</p>
-         <p>There are {this.state.items.length} HN items.</p>
+         <div id="ListPanel">
+            <div className="ItemList">
+               <div className="Logo">
+                  <div className="colored">
+                        RRHN
+                  </div>
+                  <div className="title">
+                        Hacker News
+                  </div>
+               </div>
+               <div id="ListMainContent">
+                  {lijst.map((naam) => <h1>{naam}</h1>)}
+                  {lijst.map(function (persoon) {
+                     return <h1 key={persoon.id}>{persoon.naam}</h1>
+                  })}
+                  {lijstmeth1}
+
+                  <ListItem item={this.state.items[5]} />
+               </div>
+               <div id="ListFooter">
+                  visual design based on <a href="http://blog.trackduck.com/weekly/top-10-hacker-news-redesigns/unknown-author-2/">this redesign by unknown author</a>.
+            </div>
+            </div>
+         </div>
+
+         <div id="ItemPanel">
+            <h2>No item selected yet.</h2>
+
+            <p>Select an item in the colum on the left.</p>
+         </div>
       </div>
    }
 }
