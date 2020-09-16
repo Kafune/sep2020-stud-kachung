@@ -16,39 +16,26 @@ import React from 'react';
 export default function ListItem(props) {
     const loadURL = (e) => {
         e.preventDefault();
-        props.onClick(props.URL)
+        props.onSelectItem(props.item.id);
     }
+
+    const date = new Date(props.item.time);
     return <div className="Item">
     <div className="mainInfo">
-        <ItemHeader item={props.item} />
-        <ItemFooter item={props.item} />
        <div>
           <a className="itemTitle" onClick={loadURL} href={props.item.url}>{props.item.title}</a>
           <span className="domain">{props.item.title}</span>
        </div>
 
        <div className="info">
-          {props.score}
-          <span className="divider">|</span>by 
-          {props.by}
+          {props.item.score}
+          <span className="divider">|</span>by&nbsp;
+          {props.item.by}
           <span className="divider">|</span>
-          July 18, 2016
+          {new Intl.DateTimeFormat('en-GB').format(date)}
           <span className="divider">|</span>
-          <a className="comments" href="https://news.ycombinator.com/item?id=12114716"><strong>19</strong> comments</a>
+          <a className="comments" href={"https://news.ycombinator.com/item?id="+props.item.id}><strong>19</strong> comments</a>
        </div>
     </div>
  </div>
-}
-
-
-function ItemHeader(props){
-    return {
-        
-    }
-}
-
-function ItemFooter(props){
-    return {
-
-    }
 }
