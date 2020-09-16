@@ -18,10 +18,10 @@ export class RrHNApp extends React.Component {
       this.onSelectItem = this.onSelectItem.bind(this);
    }
 
-   onSelectItem(itemId) {
-      console.log(itemId);
+   onSelectItem(item) {
+      console.log(item);
       this.setState({
-         selectedValue: itemId
+         selectedValue: item
       });
    }
 
