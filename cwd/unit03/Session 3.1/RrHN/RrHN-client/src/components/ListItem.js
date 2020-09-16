@@ -16,7 +16,7 @@ import React from 'react';
 export default function ListItem(props) {
     const loadURL = (e) => {
         e.preventDefault();
-        props.onSelectItem(props.item.id);
+        props.onSelectItem(props.item);
     }
 
     const date = new Date(props.item.time);
