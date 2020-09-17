@@ -1,3 +1,4 @@
+const e = require('express');
 const fetch = require('node-fetch');
 
 let game = {};
@@ -33,8 +34,10 @@ let map = {
  */
 game.goToLocation = async locationName => {
     //B)
-    // if(locationName == undefined || locationName == null) {
-    //     return Promise.reject("Ongeldige invoer!");
+    // if(map[player.location].exits.includes(locationName)) {
+    //     player.location = map[locationName];
+    //     // console.log(response)
+    //     return player.location;
     // }
 
     if(map[locationName]) {
@@ -42,13 +45,19 @@ game.goToLocation = async locationName => {
     }
 
     let request = await fetch('http://localhost:3000/' + locationName);
-    let response = await request.json();
+    if(!request.ok) {
+        Promise.reject("Locatie bestaat niet");
+    } else {
+        let response = await request.json();
 
-    map[locationName] = response;
-    map[locationName].description = response.description;
-    player.location = map[locationName];
+        map[locationName] = response;
+        map[locationName].description = response.description;
+        player.location = map[locationName];
+    
+        return player.location;
+    }
 
-    return player.location;
+
 };
 
 /**

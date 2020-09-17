@@ -62,6 +62,11 @@ function execute(command, argument) {
         case 'goto':
         case 'g':
             //C)
+            if(argument == null || argument == undefined) {
+                let error = new Error(`Ongeldige invoer`);
+                return Promise.reject(error);
+            }
+
             return game.goToLocation(argument).then(locationInfo => {
                 response = `you are now in ${locationInfo.description}`;
                 return Promise.resolve(locationInfo);

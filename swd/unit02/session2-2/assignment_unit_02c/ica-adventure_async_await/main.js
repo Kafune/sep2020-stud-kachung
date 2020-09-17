@@ -15,19 +15,13 @@ rl.on('line', (line) => {
     const [command, argument] = line.trim().split(' ');
     execute(command, argument).then(result => {
         //A)
+        // Als ik een async await op de functie execute probeer uit te voeren, krijg ik de error: await is only valid in async function
+        // Ik denk dat execute niet async uitgevoerd kan worden omdat deze functie in een synchronische functie rl.on wordt uitgevoerd.
         console.log(result);
         return Promise.resolve(result);
     }).catch((error) => {
-        if (error) {
-            if (error.code === COMMAND_ERROR) {
-                console.log(error.message);
-            } else {
-                //Whenever we encounter an error we don't know how to deal with,
-                //we throw it, so we can crash the program.
-                throw error;
-            }
-        }
-    });
+        return Promise.reject(error);
+    })
 
 }).on('close', function () {
     //DEFAULT ^c
@@ -53,24 +47,15 @@ async function execute(command, argument) {
         case 'goto':
         case 'g':
             //C
-            // try {
-                let destination = await game.goToLocation(argument);
-                let request = await destination();
-                console.log(request);
-            // } catch (error) {
-            //     error = "Ongeldige invoer!";
-            // }
-
-
-
-        // .then(). => {
-        //     error = "Locatie bestaat niet.";
-        //     return error;
-        // });
+            if(argument == null || argument == undefined) {
+                return Promise.reject(`Geen locatie ingevoerd.`);
+            }
+            response = await game.goToLocation(argument)
+            return Promise.resolve(response);
         default:
             let err = new Error(`The input: '${command}' is not defined`)
             err.code = COMMAND_ERROR;
             return Promise.reject(err);
-            
+
     }
 }
