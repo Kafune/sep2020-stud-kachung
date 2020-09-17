@@ -53,13 +53,13 @@ async function execute(command, argument) {
         case 'goto':
         case 'g':
             //C
-            try {
+            // try {
                 let destination = await game.goToLocation(argument);
                 let request = await destination();
                 console.log(request);
-            } catch (error) {
-                error = "Ongeldige invoer!";
-            }
+            // } catch (error) {
+            //     error = "Ongeldige invoer!";
+            // }
 
 
 

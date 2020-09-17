@@ -38,7 +38,7 @@ game.goToLocation = async locationName => {
     // }
 
     if(map[locationName]) {
-         return locationName;
+         return player.location;
     }
 
     let request = await fetch('http://localhost:3000/' + locationName);
