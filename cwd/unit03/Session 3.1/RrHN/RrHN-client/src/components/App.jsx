@@ -12,7 +12,7 @@ export class RrHNApp extends React.Component {
       super(props);
       this.state = {
          items: frontPageItems,
-         selectedValue: frontPageItems[1]
+         selectedValue: ''
       }
       // document.getElementsByClassName('itemTitle').addEventListener('click', () => this.onSelectItem());
       this.onSelectItem = this.onSelectItem.bind(this);
@@ -28,13 +28,6 @@ export class RrHNApp extends React.Component {
 
 
    render() {
-      // const lijst = [{ naam: "Rowan" }, { naam: "Patrick" }];
-      // const lijstmeth1 = [<h1>{"Rowan"}</h1>, <h1>{"Patrick"}</h1>];
-
-      // const listItems = this.state.items(item => {
-      //    <ListItem item={item} onClick={newFn}/>
-      // })
-
       return <div className="App">
          <div id="ListPanel">
             <div className="ItemList">
@@ -47,10 +40,6 @@ export class RrHNApp extends React.Component {
                   </div>
                </div>
                <div id="ListMainContent">
-                  {/* {lijst.map((naam) => <h1>{naam}</h1>)}
-                  {lijst.map(function (persoon) {
-                     return <h1 key={persoon.id}>{persoon.naam}</h1>
-                  })} */}
                   <ItemList list={this.state.items} onSelect={this.onSelectItem}/>
                </div>
                <div id="ListFooter">
