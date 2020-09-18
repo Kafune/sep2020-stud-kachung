@@ -45,9 +45,7 @@ game.goToLocation = async locationName => {
     }
 
     let request = await fetch('http://localhost:3000/' + locationName);
-    if(!request.ok) {
-        Promise.reject("Locatie bestaat niet");
-    } else {
+    request.then((locationInfo) => {
         let response = await request.json();
 
         map[locationName] = response;
@@ -55,7 +53,18 @@ game.goToLocation = async locationName => {
         player.location = map[locationName];
     
         return player.location;
-    }
+    })
+    // if(!request.ok) {
+    //     throw new Error("Locatie bestaat niet");
+    // } else {
+    //     let response = await request.json();
+
+    //     map[locationName] = response;
+    //     map[locationName].description = response.description;
+    //     player.location = map[locationName];
+    
+    //     return player.location;
+    // }
 
 
 };
