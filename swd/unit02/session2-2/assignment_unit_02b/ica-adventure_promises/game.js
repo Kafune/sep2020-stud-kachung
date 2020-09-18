@@ -52,7 +52,6 @@ game.goToLocation = locationName => {
             error = "Deze locatie bestaat niet!";
             return error;
         })
-
 };
 
 /**

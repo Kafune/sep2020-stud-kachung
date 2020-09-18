@@ -69,7 +69,7 @@ function execute(command, argument) {
 
             return game.goToLocation(argument).then(locationInfo => {
                 response = `you are now in ${locationInfo.description}`;
-                return Promise.resolve(locationInfo);
+                return Promise.resolve(response);
             }).catch((error) => {
                 return Promise.reject(error);
             });

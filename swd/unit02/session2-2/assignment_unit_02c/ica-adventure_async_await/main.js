@@ -50,12 +50,12 @@ async function execute(command, argument) {
             if(argument == null || argument == undefined) {
                 return Promise.reject(`Geen locatie ingevoerd.`);
             }
-            response = await game.goToLocation(argument)
+            let locationInfo = await game.goToLocation(argument)
+            response = `you are now in ${locationInfo.description}`;
             return Promise.resolve(response);
         default:
             let err = new Error(`The input: '${command}' is not defined`)
             err.code = COMMAND_ERROR;
             return Promise.reject(err);
-
     }
 }
