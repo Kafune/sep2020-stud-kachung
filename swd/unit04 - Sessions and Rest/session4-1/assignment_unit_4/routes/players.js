@@ -1,3 +1,4 @@
+const e = require('express');
 const express = require('express')
 const players = express.Router();
 
@@ -32,7 +33,12 @@ players.post('/login', async (req, res) => {
 });
 
 players.post('/logout', async (req, res) => {
-    res.send("sign out!");
+    if(req.session.player) {
+        delete req.session.player;
+        res.send("sign out!");
+    } else {
+        res.send("Not logged in!");
+    }
 });
 
 module.exports = players;
