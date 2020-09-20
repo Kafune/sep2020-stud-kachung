@@ -19,7 +19,16 @@ players.post('/register', async (req, res) => {
 });
 
 players.post('/login', async (req, res) => {
-    res.send("sign in!");
+    const fileLocation = playerfilesFolderName + `/${req.body.player}.json`;
+    const readFile = await promiseWrappers.readFileP(fileLocation);
+    const parsedJSONFile = await JSON.parse(readFile);
+    if(req.body.password == parsedJSONFile.password) {
+        req.session.player = req.body.player;
+        res.send("sign in!");
+    } else {
+        res.send("Invalid username or password!");
+    }
+
 });
 
 players.post('/logout', async (req, res) => {
