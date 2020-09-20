@@ -37,10 +37,10 @@ const gameStateReader = async (req, res, next) => {
     }
 }
 
-actions.use('/:player/', gameFileReader);
-actions.use('/:player/', gameStateReader);
+actions.use('/', gameFileReader);
+actions.use('/', gameStateReader);
 
-actions.get('/:player/where', async (req, res) => {
+actions.get('/where', async (req, res) => {
     const locationInformation = await req.game.getLocationInformation();
     console.log(req.game.getLocationInformation())
 
@@ -48,7 +48,7 @@ actions.get('/:player/where', async (req, res) => {
 });
 
 
-actions.post('/:player/goto', async (req, res) => {
+actions.post('/goto', async (req, res) => {
    //Paste your implementation from assignment unit 3c here
    await req.game.goToLocation(req.query.location);
    const getPlayerInfo = await req.game.state;
@@ -57,7 +57,7 @@ actions.post('/:player/goto', async (req, res) => {
    console.log(getPlayerInfo.map);
 });
 
-actions.post('/:player/arise', async (req, res) => {
+actions.post('/arise', async (req, res) => {
   //Paste your implementation from assignment unit 3c here
   const playerNewStart = await req.game.startNew(req.body.start, req.body.inventory);
   const getPlayerInfo = await req.game.state;
