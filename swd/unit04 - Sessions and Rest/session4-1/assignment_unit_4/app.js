@@ -10,7 +10,7 @@ const players = require('./routes/players');
 
 app.use(bodyParser.json());
 app.use(session({resave: true, saveUninitialized: true, secret: "qwerabcdgjia"}));
-app.use('/action', actions);
+app.use('/actions', actions);
 app.use('/games', games);
 app.use('/', players)
 
