@@ -7,12 +7,12 @@ const promiseWrappers = require('./../promise-wrappers');
 const gameFilesFolderName = 'game_files';
 
 
-games.get('/listPlayerFiles', async (req, res) => {
+games.get('/playerfile', async (req, res) => {
     const directory = await promiseWrappers.readdirP(`./`+gameFilesFolderName);
     res.json(directory);
 })
 
-games.post('/createPlayerFile', async (req, res) => {
+games.post('/playerfile', async (req, res) => {
     try {
         const fileLocation = gameFilesFolderName + `/${req.body.name}.json`;
         await promiseWrappers.createEmptyFileP(fileLocation);
@@ -24,7 +24,7 @@ games.post('/createPlayerFile', async (req, res) => {
     }
 });
 
-games.delete('/deletePlayerFile/:player', async (req, res) => {
+games.delete('/playerfile/:player', async (req, res) => {
     const message = {
         "result": `Game ${req.params.player}.json removed`
     }

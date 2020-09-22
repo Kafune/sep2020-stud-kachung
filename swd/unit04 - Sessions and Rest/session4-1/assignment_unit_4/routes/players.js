@@ -7,7 +7,7 @@ const promiseWrappers = require('./../promise-wrappers');
 
 const playerfilesFolderName = 'player_files';
 
-players.post('/register', async (req, res) => {
+players.post('/accounts', async (req, res) => {
     try {
         const fileLocation = playerfilesFolderName + `/${req.body.player}.json`;
         await promiseWrappers.createEmptyFileP(fileLocation);
@@ -19,7 +19,7 @@ players.post('/register', async (req, res) => {
     }
 });
 
-players.post('/login', async (req, res) => {
+players.post('/sessions', async (req, res) => {
     const fileLocation = playerfilesFolderName + `/${req.body.player}.json`;
     const readFile = await promiseWrappers.readFileP(fileLocation);
     const parsedJSONFile = await JSON.parse(readFile);
@@ -32,7 +32,7 @@ players.post('/login', async (req, res) => {
 
 });
 
-players.post('/logout', async (req, res) => {
+players.delete('/sessions', async (req, res) => {
     if(req.session.player) {
         delete req.session.player;
         res.send("sign out!");

@@ -45,7 +45,7 @@ actions.use((error, req, res, next) => {
     res.send(error);
 })
 
-actions.get('/where', async (req, res) => {
+actions.get('/location', async (req, res) => {
     const locationInformation = await req.game.getLocationInformation();
     console.log(req.game.getLocationInformation())
 
@@ -53,7 +53,7 @@ actions.get('/where', async (req, res) => {
 });
 
 
-actions.post('/goto', async (req, res) => {
+actions.post('/location', async (req, res) => {
     //Paste your implementation from assignment unit 3c here
     await req.game.goToLocation(req.query.location);
     const getPlayerInfo = await req.game.state;
@@ -62,7 +62,7 @@ actions.post('/goto', async (req, res) => {
     console.log(getPlayerInfo.map);
 });
 
-actions.post('/arise', async (req, res) => {
+actions.post('/player', async (req, res) => {
     //Paste your implementation from assignment unit 3c here
     const playerNewStart = await req.game.startNew(req.body.start, req.body.inventory);
     const getPlayerInfo = await req.game.state;
