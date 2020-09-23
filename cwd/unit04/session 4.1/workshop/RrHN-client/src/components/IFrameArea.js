@@ -1,7 +1,10 @@
 import React from 'react';
+import Preferences from './Preferences';
 
 export default function IFrameArea(props) {
-    if(props.frameTarget == '') {
+    if(props.showDialog) {
+        return IFramePreferences(props);
+    } else if (props.frameTarget === '') {
         return IFrameAreaEmpty()
     } else {
         return IFrameAreaFilled(props.frameTarget)
@@ -20,4 +23,8 @@ function IFrameAreaFilled(props) {
     return <div id="ItemPanel">
         <iframe class="IFrameView" src={props.url} frameborder="0" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin"></iframe>
     </div>
+}
+
+function IFramePreferences(props) {
+    return <Preferences options={props.options} preferenceHandler={props.preferenceHandler}/>
 }

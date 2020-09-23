@@ -1,21 +1,6 @@
 import React from 'react';
 
-// {
-//     "by": "fatiherikli",
-//     "descendants": 665,
-//     "id": 12115187,
-//     "kids": [ 12115339, 12115359, 12115449 ],
-//     "score": 18,
-//     "time": 1468851891,
-//     "title": "Show HN: Language Evolution Simulation",
-//     "type": "story",
-//     "url": "https://github.com/fatiherikli/language-evolution-simulation"
-//  },
-
-
 export default function ListItem(props) {
-
-
    return <div className="Item">
       <div className="mainInfo">
          <ItemHeader item={props.item} onSelectItem={props.onSelectItem}/>

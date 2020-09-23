@@ -12,10 +12,15 @@ export class RrHNApp extends React.Component {
       super(props);
       this.state = {
          items: frontPageItems,
-         selectedValue: ''
+         selectedValue: '',
+         preferenceDialog: true,
+         preferences: {
+            itemSize: 40,
+            color: 'green'
+         }
       }
-      // document.getElementsByClassName('itemTitle').addEventListener('click', () => this.onSelectItem());
       this.onSelectItem = this.onSelectItem.bind(this);
+      // this.setPreference = this.setPreference.bind(this);
    }
 
    onSelectItem(item) {
@@ -23,7 +28,18 @@ export class RrHNApp extends React.Component {
       this.setState({
          selectedValue: item
       });
-   }
+   };
+
+   setPreference(e) {
+      const target = e.target;
+      const value = target.value;
+      const name = target.name;
+      this.setState({
+         preferences: {
+            [name]: value
+         }
+      });
+   };
 
 
 
@@ -51,7 +67,7 @@ export class RrHNApp extends React.Component {
             </div>
          </div>
 
-         <IFrameArea frameTarget={this.state.selectedValue} />
+         <IFrameArea frameTarget={this.state.selectedValue} showDialog={this.state.preferenceDialog} options={this.state.preferences} preferenceHandler={() => {this.setPreference}} />
       </div>
    }
 }
