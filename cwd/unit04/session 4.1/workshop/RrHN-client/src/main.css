@@ -107,6 +107,38 @@ a {
    background-color: #fff0dd;
 }
 
+.orange .Item.new .itemTitle {
+   color: #ff8800;
+}
+.green .Item.new .itemTitle {
+   color: #659f6c;
+}
+.brown .Item.new .itemTitle {
+   color: #a9916b;
+}
+.Item.new.selectedItem .itemTitle {
+   color: #ee7700;
+}
+.Item.seen .itemTitle {
+   color: #444;
+}
+.Item.read .itemTitle {
+   color: #999;
+}
+.Item.selectedItem .itemTitle {
+   color: #000;
+}
+
+.orange .Item.selectedItem {
+   background-color: #fff0dd;
+}
+.green .Item.selectedItem {
+   background-color: #c0e7c5;
+}
+.brown .Item.selectedItem {
+   background-color: #e5d6c0;
+}
+
 .Item .domain {
     color: #999;
 }
@@ -129,4 +161,71 @@ a {
     display: inline-block;
     padding: 0rem 0.4rem;
     color: #ccc;
-}    color: #ccc;
+}
+
+button {
+   margin: 0 auto;
+   font-family: Georgia;
+   display: block;
+   padding: 0.5rem 1rem;
+   font-size: 1.1rem;
+   border-radius: 0.5rem;
+   color: black;
+   cursor: pointer;
+   box-shadow: 3px 3px 10px 0px rgba(0,0,0,0.22);
+}
+.orange button  {
+   background-color: #fff0dd;
+   border: 1px solid #ff8800;
+}
+.green button  {
+   background-color: #c0e7c5;
+   border: 1px solid #659f6c;
+}
+.brown button  {
+   background-color: #e5d6c0;
+   border: 1px solid #a9916b;
+}
+
+
+#markAsSeen {
+   padding: 1rem 3rem;
+   margin: 3rem auto;
+}
+
+.PreferencesDialog {
+   justify-content: center;
+   background-color: white;
+   border: 1px solid #ccc;
+   padding: 0rem 3rem 3rem 3rem;
+   margin: auto auto;
+   width: 80%;
+   max-width: 35rem;
+   font-size: 1.1rem;
+   box-shadow: 10px 10px 50px 0px rgba(0,0,0,0.2);
+}
+.PreferencesDialog header {
+   text-align: left;
+   margin-bottom: 3rem;
+}
+
+.PreferencesDialog label {
+   display:block;
+   margin: 2rem 0 0 0;
+   text-align: left;
+}
+.PreferencesDialog .warning {
+   font-size: 0.8rem;
+   text-align: left;
+   padding-top: 0.2rem;
+   font-style: italic;
+}
+.dialogButtons {
+      text-align: center;
+}
+
+.PreferencesDialog button {
+   display:inline-block;
+   margin-left: 1rem;
+}
+
