@@ -10,6 +10,7 @@ export default function ListItem(props) {
 }
 
 function ItemHeader(props) {
+   const domain = (props.item.url) ? props.item.url.split(' ://') : "";
    const loadURL = (e) => {
       e.preventDefault();
       props.onSelectItem(props.item);

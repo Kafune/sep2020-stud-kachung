@@ -23,6 +23,13 @@ export class RrHNApp extends React.Component {
       // this.setPreference = this.setPreference.bind(this);
    }
 
+   savePrefs = (preferences) => {
+      this.setState((state, props) => ({
+         preferences: {...preferences},
+         showPrefs: false
+      }));
+   }
+
    onSelectItem(item) {
       console.log(item);
       this.setState({
