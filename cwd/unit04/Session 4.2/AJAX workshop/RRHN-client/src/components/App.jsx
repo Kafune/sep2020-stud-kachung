@@ -13,23 +13,17 @@ export class RrHNApp extends React.Component {
       this.state = {
          items: frontPageItems,
          selectedValue: '',
-         preferenceDialog: true,
+         preferenceDialog: false,
          preferences: {
-            itemSize: 5,
+            itemSize: 10,
             color: 'green'
          },
-         itemStatus: null
+         itemStatus: {}
       }
       this.onSelectItem = this.onSelectItem.bind(this);
-      // this.setPreference = this.setPreference.bind(this);
    }
 
-   // savePrefs = (preferences) => {
-   //    this.setState((state, props) => ({
-   //       preferences: {...preferences},
-   //       preferenceDialog: false
-   //    }));
-   // }
+
 
    onSelectItem(item) {
       this.setState({
@@ -37,28 +31,21 @@ export class RrHNApp extends React.Component {
       });
    };
 
-   // setPreference(e) {
-   //    const target = e.target;
-   //    const value = target.value;
-   //    const name = target.name;
-   //    this.setState({
-   //       preferences: {
-   //          [name]: value
-   //       }
-   //    });
-   // };
 
-   // componentDidMount() {
-   //    let url = 'http://localhost:3000/itemStatuses'
-   //    fetch(url)
-   //    .then(response => response.json())
-   //    .then(result => console.log(result));
-   //    console.log(this.state.itemStatus)
-   // }
+   componentDidMount() {
+      let url = 'http://localhost:3000/itemStatuses'
+      fetch(url)
+      .then(response => response.json())
+      .then(result => console.log(result));
+      console.log(this.state.itemStatus)
+   }
 
 
 
    render() {
+      const {itemStatus} = this.state;
+
+
       return <div className="App">
          <div id="ListPanel">
             <div className="ItemList">
@@ -75,6 +62,7 @@ export class RrHNApp extends React.Component {
                </header>
                <div id="ListMainContent">
                   <ItemList list={this.state.items} onSelect={this.onSelectItem} itemSize={this.state.preferences.itemSize}/>
+                  
                </div>
                <div id="ListFooter">
                   visual design based on <a href="http://blog.trackduck.com/weekly/top-10-hacker-news-redesigns/unknown-author-2/">this redesign by unknown author</a>.
