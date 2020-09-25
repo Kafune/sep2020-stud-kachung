@@ -82,7 +82,8 @@ export class RrHNApp extends React.Component {
             </div>
          </div>
 
-         <IFrameArea frameTarget={this.state.selectedValue} showDialog={this.state.preferenceDialog} preferences={this.state.preferences.itemSize} />
+         <IFrameArea frameTarget={this.state.selectedValue} showDialog={this.state.preferenceDialog} 
+         preferences={this.state.preferences} itemSize={this.state.preferences.itemSize}/>
       </div>
    }
 }

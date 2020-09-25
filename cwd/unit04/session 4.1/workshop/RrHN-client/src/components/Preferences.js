@@ -4,7 +4,7 @@ import React from 'react';
 export default class Preferences extends React.Component {
 
     state = {
-        ...this.props.preferences,
+        ... this.props.preferences,
     };
 
     handleColorChange = (e) => {
@@ -37,8 +37,8 @@ export default class Preferences extends React.Component {
                 </div>
             </header>
             <label for="listSizeField">
-                Show <input type="number" name="itemSize" onChange={this.handleItemSize} className={checkInputSize(this.state.itemSize)} 
-                id="listSizeField" value={this.state.itemSize}/> items in the list.
+                Show <input type="number" name="itemSize" value={this.props.itemSize} onChange={this.handleItemSize} className={checkInputSize(this.props.itemSize)} 
+                id="listSizeField" /> items in the list.
             </label>
             <label for="colorField">
                 color:

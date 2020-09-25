@@ -3,7 +3,7 @@ import Preferences from './Preferences';
 
 export default function IFrameArea(props) {
     if(props.showDialog) {
-        return IFramePreferences(props);
+        return IFramePreferences(props.preferences);
     } else if (props.frameTarget === '') {
         return IFrameAreaEmpty()
     } else {
@@ -26,5 +26,5 @@ function IFrameAreaFilled(props) {
 }
 
 function IFramePreferences(props) {
-    return <Preferences preferences={props.preferences}/>
+    return <Preferences preferences={props.preferences} itemSize={props.itemSize}/>
 }
