@@ -3,7 +3,7 @@ import Preferences from './Preferences';
 
 export default function IFrameArea(props) {
     if(props.showDialog) {
-        return IFramePreferences(props.preferences);
+        return IFramePreferences(props);
     } else if (props.frameTarget === '') {
         return IFrameAreaEmpty()
     } else {
@@ -11,7 +11,15 @@ export default function IFrameArea(props) {
     }
 }
 
-function IFrameAreaEmpty(props = '') {
+// export default class IFrameArea extends React.Component {
+    
+//     if(props.showDialog) {
+        
+//     }
+// }
+
+
+function IFrameAreaEmpty() {
     return <div id="ItemPanel">
         <h2>No item selected yet.</h2>
 
@@ -26,5 +34,6 @@ function IFrameAreaFilled(props) {
 }
 
 function IFramePreferences(props) {
-    return <Preferences preferences={props.preferences} itemSize={props.itemSize}/>
+    return <Preferences itemSize={props.preferences.itemSize} color={props.preferences.color}
+    onItemSizeChange={props.handleItemSize} onColorChange={props.onColorChange}/>
 }

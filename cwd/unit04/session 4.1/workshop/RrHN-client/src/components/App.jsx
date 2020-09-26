@@ -10,17 +10,18 @@ import IFrameArea from './IFrameArea';
 export class RrHNApp extends React.Component {
    constructor(props) {
       super(props);
+      this.onSelectItem = this.onSelectItem.bind(this);
+      // this.handleItemSize = this.handleItemSize.bind(this);
       this.state = {
          items: frontPageItems,
          selectedValue: '',
          preferenceDialog: true,
          preferences: {
             itemSize: 5,
-            color: 'green'
+            color: 'orange'
          },
          itemStatus: null
       }
-      this.onSelectItem = this.onSelectItem.bind(this);
       // this.setPreference = this.setPreference.bind(this);
    }
 
@@ -37,6 +38,19 @@ export class RrHNApp extends React.Component {
       });
    };
 
+   handleItemSize(itemSizeValue) {
+      // if(isNaN(this.state.itemSize) || this.state.itemSize < 0) {
+      //     this.setState({itemSize: null});
+      // }
+      this.setState({itemSize: itemSizeValue});
+      // console.log(e.target.value);
+  }
+
+  handleColorChange(){
+   this.setState({color: this.state.preferences.color});
+
+  }
+
    // setPreference(e) {
    //    const target = e.target;
    //    const value = target.value;
@@ -48,17 +62,10 @@ export class RrHNApp extends React.Component {
    //    });
    // };
 
-   // componentDidMount() {
-   //    let url = 'http://localhost:3000/itemStatuses'
-   //    fetch(url)
-   //    .then(response => response.json())
-   //    .then(result => console.log(result));
-   //    console.log(this.state.itemStatus)
-   // }
-
-
 
    render() {
+   const preferences = this.state.preferences;
+
       return <div className="App">
          <div id="ListPanel">
             <div className="ItemList">
@@ -74,7 +81,7 @@ export class RrHNApp extends React.Component {
                   </span>
                </header>
                <div id="ListMainContent">
-                  <ItemList list={this.state.items} onSelect={this.onSelectItem} itemSize={this.state.preferences.itemSize}/>
+                  <ItemList list={this.state.items} onSelect={this.onSelectItem} itemSize={preferences.itemSize}/>
                </div>
                <div id="ListFooter">
                   visual design based on <a href="http://blog.trackduck.com/weekly/top-10-hacker-news-redesigns/unknown-author-2/">this redesign by unknown author</a>.
@@ -83,7 +90,8 @@ export class RrHNApp extends React.Component {
          </div>
 
          <IFrameArea frameTarget={this.state.selectedValue} showDialog={this.state.preferenceDialog} 
-         preferences={this.state.preferences} itemSize={this.state.preferences.itemSize}/>
+         preferences={preferences} itemSize={preferences.itemSize} color={preferences.color}
+         onItemSizeChange={this.handleItemSize} onColorChange={this.handleColorChange} />
       </div>
    }
 }

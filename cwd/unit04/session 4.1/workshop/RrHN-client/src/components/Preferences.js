@@ -3,19 +3,25 @@ import React from 'react';
 
 export default class Preferences extends React.Component {
 
-    state = {
-        ... this.props.preferences,
-    };
-
-    handleColorChange = (e) => {
-        this.setState({color: e.target.value});
+    // state = {
+    //     ... this.props.preferences,
+    // };
+    constructor(props) {
+        super(props);
+        // this.handleItemSize = this.handleColorChange.bind(this);
     }
 
-    handleItemSize = (e) => {
-        if(isNaN(this.state.itemSize) || this.state.itemSize < 0) {
-            this.setState({itemSize: null});
-        }
-        this.setState({itemSize: e.target.value});
+    handleColorChange = (e) => {
+        // this.setState({color: e.target.value});
+        this.props.onColorChange(e.target.value)
+    }
+
+    handleItemSize(e) {
+        // if(isNaN(this.state.itemSize) || this.state.itemSize < 0) {
+        //     this.setState({itemSize: null});
+        // }
+        this.props.onItemSizeChange(e.target.value);
+        // console.log(e.target.value);
     }
     
     // saveThePrefs = () => {
@@ -28,7 +34,7 @@ export default class Preferences extends React.Component {
             return input < 0 || input > 500 ? 'inputBorder' : '';
         }
 
-        return <div id="ItemPanel" className={`${this.state.color}`}>
+        return <div id="ItemPanel" className={`${this.props.color}`}>
         <div class="PreferencesDialog">
             <header>
                 <div class="Logo">
