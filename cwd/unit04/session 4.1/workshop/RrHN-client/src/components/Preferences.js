@@ -6,27 +6,33 @@ export default class Preferences extends React.Component {
     // state = {
     //     ... this.props.preferences,
     // };
-    constructor(props) {
-        super(props);
-        // this.handleItemSize = this.handleColorChange.bind(this);
-    }
 
     handleColorChange = (e) => {
         // this.setState({color: e.target.value});
         this.props.onColorChange(e.target.value)
     }
 
-    handleItemSize(e) {
-        // if(isNaN(this.state.itemSize) || this.state.itemSize < 0) {
-        //     this.setState({itemSize: null});
-        // }
+    handleItemSize = (e) => {
+        const regex = /^[0-9\b]+$/;
+
+        //check of de invoer geldig is. zo niet, geef de input deze waarde.
+        if(!regex.test(e.target.value) || e.target.value < 0) {
+            e.target.value = 1;
+        }
+        
         this.props.onItemSizeChange(e.target.value);
-        // console.log(e.target.value);
+    }
+
+    hidePreferenceLog= () => {
+        this.props.hidePrefs();
     }
     
-    // saveThePrefs = () => {
-    //     this.props.savePrefs({color: this.state.color, itemSize: this.state.itemSize});
-    // }
+    savePreferences = (itemSize, color) => {
+        this.props.applyPreferences({
+            itemSize: this.props.itemSize,
+            color: this.props.color
+        });
+    }
 
 
     render() {
@@ -48,13 +54,16 @@ export default class Preferences extends React.Component {
             </label>
             <label for="colorField">
                 color:
-                 <select id="colorField" name="color" onChange={this.handleColorChange}>
+                 <select id="colorField" name="color" value={this.props.color} onChange={this.handleColorChange}>
                     <option value="orange">orange</option>
                     <option value="green">green</option>
                     <option value="brown">brown</option>
                 </select>
             </label>
-            <div class="dialogButtons" onClick={() => {this.savePrefs}}><button>OK</button><button>Cancel</button></div>
+            <div class="dialogButtons">
+                <button onClick={this.savePreferences}>OK</button>
+                <button onClick={this.hidePreferenceLog}>Cancel</button>
+            </div>
         </div>
     </div>
     }
