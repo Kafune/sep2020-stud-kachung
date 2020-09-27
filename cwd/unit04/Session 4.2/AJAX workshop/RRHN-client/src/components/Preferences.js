@@ -2,11 +2,6 @@ import React from 'react';
 
 
 export default class Preferences extends React.Component {
-
-    // state = {
-    //     ... this.props.preferences,
-    // };
-
     handleColorChange = (e) => {
         // this.setState({color: e.target.value});
         this.props.onColorChange(e.target.value)

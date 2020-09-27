@@ -1,9 +1,10 @@
 import React from 'react';
 
 export default function ListItem(props) {
+
    return <div className="Item">
       <div className="mainInfo">
-         <ItemHeader item={props.item} onSelectItem={props.onSelectItem}/>
+         <ItemHeader item={props.item} onSelectItem={props.onSelectItem} fetchedItems={props.fetchedItems}/>
          <ItemFooter item={props.item}/>
       </div>
    </div>
@@ -15,9 +16,11 @@ function ItemHeader(props) {
       e.preventDefault();
       props.onSelectItem(props.item);
    }
+
    return <div>
-      <a className="itemTitle" onClick={loadURL} href={props.item.url}>{props.item.title}</a>
+      <a className="itemTitle " onClick={loadURL} href={props.item.url}>{props.item.title}</a>
       <span className="domain">{props.item.title}</span>
+      <p>{props.fetchedItems[props.item.id]}</p>
    </div>
 }
 
