@@ -14,7 +14,9 @@ theExpressApp.use(express.static(path.join(__dirname, 'client-side')));
 
 
 // code to setup event listeners for WebSocket communication can go here
+theWebSocketServer.on('connection', function connection(ws) {
 
+});
 
 theHttpServer.on('request', theExpressApp);
 theHttpServer.listen( 3000,
