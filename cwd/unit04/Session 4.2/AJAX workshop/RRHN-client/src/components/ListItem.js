@@ -15,7 +15,24 @@ function ItemHeader(props) {
    const loadURL = (e) => {
       e.preventDefault();
       props.onSelectItem(props.item);
+      props.fetchedItems[props.item.id] = 'read';
+      storeItemStatus(props.item.id, 'read');
    }
+
+   const storeItemStatus = (id, status) => {
+      const url = "http://localhost:3000/itemStatuses/" + id;
+      const response = fetch(url, {
+        method: "PUT",
+        headers: {
+          'Content-Type': 'text/plain'
+        },
+        body: status,
+      }).catch(response => {
+         if (!response.ok) {
+            throw new Error(`HTTP PUT request went wrong: got "${response.statusText}" for "${url}"`)
+          }
+      })
+    }
 
    return <div>
       <a className="itemTitle " onClick={loadURL} href={props.item.url}>{props.item.title}</a>

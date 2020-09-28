@@ -1,7 +1,5 @@
 import React from 'react'
 
-import frontPageItems from '../frontpageData';
-
 import ItemList from './ItemList';
 import Preferences from './Preferences';
 
@@ -11,7 +9,7 @@ export class RrHNApp extends React.Component {
    constructor(props) {
       super(props);
       this.state = {
-         items: frontPageItems,
+         items: [],
          selectedValue: '',
          preferenceDialog: false,
          preferences: {
@@ -25,16 +23,35 @@ export class RrHNApp extends React.Component {
    };
 
    componentDidMount() {
+      this.fetchItemStatus();
+      this.fetchTopStories();
+   }
+
+   fetchItemStatus = () => {
       let url = 'http://localhost:3000/itemStatuses'
       fetch(url)
          .then(response => response.json())
          .then(result => {
-            console.log(result);
+            // console.log(result);
             this.setState({
                itemStatus: result
             })
          })
    }
+
+   fetchTopStories = () => {
+      let url = 'http://localhost:3000/hn/topstories';
+      fetch(url)
+         .then(response => response.json())
+         .then(result => {
+            console.log(result);
+            this.setState({
+               items: result
+            });
+            console.log(this.state.items)
+         })
+   }
+
       onSelectItem = (item) => {
          this.setState({
             selectedValue: item.url
