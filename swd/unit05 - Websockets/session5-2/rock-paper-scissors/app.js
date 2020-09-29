@@ -94,6 +94,9 @@ webSocketServer.on('connection', function connection(websocket) {
       //Check whether or not both servers have chosen something
       //beware! webSocketServer.clients is a set, not an array. So use size and destructuring.
       const [client1, client2] = webSocketServer.clients
+
+      
+      
       if(webSocketServer.clients.size == 2 && client1.choice != undefined && client2.choice != undefined){
          
          let result = playGame(client1, client2)

@@ -86,3 +86,15 @@ input, button {
   padding: 2px 4px;
   margin: 2px 4px;
 }
+
+a.active,
+a.active :hover {
+  color: mediumblue;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.your-style-name {
+  text-transform: uppercase;
+  font-weight: bold;
+}
