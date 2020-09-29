@@ -31,17 +31,33 @@ const rules = {
 
 const prefabMessage = {
    CHOICE_ACCEPTED : choiceAcceptedMessage,
-   CHOICE_NOT_ACCEPTED : () =>{},
-   OPPONENT_CHOICE : () =>{},
+   CHOICE_NOT_ACCEPTED : choiceNotAcceptedMessage,
+   OPPONENT_CHOICE : opponentChoiceMessage,
    WIN: winMessage,
-   LOSE: ()=>{},
+   LOSE: loseMessage,
    TIE: tieMessage,
-   OPPONENT_LEFT: ()=>{}
+   OPPONENT_LEFT: opponentLeftMessage
 }
 
 //TODO: Add some nessecary properties
 function choiceAcceptedMessage(){
    return JSON.stringify({messageType: "CHOICE ACCEPTED" })
+}
+
+function choiceNotAcceptedMessage() {
+   return JSON.stringify({messageType: "CHOICE NOT ACCEPTED"})
+}
+
+function opponentChoiceMessage() {
+   return JSON.stringify({messageType: 'OPPONENT CHOICE'})
+}
+
+function loseMessage() {
+   return JSON.stringify({messageType: 'LOSE'})
+}
+
+function opponentLeftMessage() {
+   return JSON.stringify({messageType: 'OPPONENT LEFT'})
 }
 
 //TODO: Add some nessecary properties
@@ -88,6 +104,7 @@ webSocketServer.on('connection', function connection(websocket) {
             result.player2.send(prefabMessage.TIE())
          }else{
             console.log("winner")
+            
             result.winner.send(prefabMessage.WIN())
             result.loser.send(prefabMessage.LOSE())
          }
