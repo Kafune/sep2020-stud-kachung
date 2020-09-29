@@ -52,9 +52,9 @@ function playGame(player1Socket, player2Socket) {
    if (player1Socket.choice === player2Socket.choice) {
       return {isTie = true, player1: player1Socket, player2: player2Socket}
    } else if (rules[player1Socket.choice][player2Socket.choice]) {
-      return {winner: player1Socket, loser: player2Socket}
+      return {isTie = false, winner: player1Socket, loser: player2Socket}
    } else {
-      return {winner: player2Socket, loser: player1Socket}
+      return {isTie = false, winner: player2Socket, loser: player1Socket}
    }
 }
 
@@ -73,15 +73,16 @@ webSocketServer.on('connection', function connection(websocket) {
          // client2.partner = client1;
          // client1.partner.forEach();
 
-         
-         let [client1, client2] = webSocketServer.clients();
          let result = playGame(...webSocketServer.clients())
 
          if(result.isTie) {
             //tie
+            console.log("tie!")
+            result.player1.send(sendMessage.TIE(result))
+            result.player2.send(sendMessage.tie(result))
          } else {
-            result.winner.sendJSON(prefabMessage.WIN(result))
-            result.loser.sendJSON("loser message")
+            result.winner.send(prefabMessage.WIN(result))
+            result.loser.send("loser message")
          }
       }
       // const result = playGame(eerste, tweede);
