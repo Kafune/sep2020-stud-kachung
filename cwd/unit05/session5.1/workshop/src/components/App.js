@@ -19,7 +19,7 @@ class App extends React.Component {
       <Router>
         <div className="app">
           <NavBar/>
-          <switch>
+          <Switch>
           <Route exact path="/" component={Home}/>
           <Route path="/about" component={About} />
           <Route path="/delays" component={Delays} />
@@ -27,7 +27,7 @@ class App extends React.Component {
           <Route path="/login" component={Login} />
           <Route path="/logout" component={Logout} />
           <Route path='*' Component={NotFound} />
-          </switch>
+          </Switch>
         </div>
       </Router>
     );

@@ -1,5 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import {BrowserRouter as Router} from "react-router-dom";
 
 import './main.css'; // Using Webpack, we usually import CSS from JavaScript, not from HTML.
                    // This is not standard JavaScript, it's a Webpack feature
@@ -7,5 +8,9 @@ import './main.css'; // Using Webpack, we usually import CSS from JavaScript, no
 
 import { RrHNApp } from "./components/App";
 
-const mainComponent = <RrHNApp />;
+const mainComponent = (
+    <Router>
+        <RrHNApp/>
+    </Router>
+)
 ReactDOM.render( mainComponent, document.getElementById('root') );
