@@ -1,4 +1,5 @@
 import React from 'react';
+import {NavLink} from 'react-router-dom';
 
 export default function ListItem(props) {
 
@@ -13,7 +14,7 @@ export default function ListItem(props) {
 function ItemHeader(props) {
    // const domain = (props.item.url) ? props.item.url.split(' ://') : "";
    const loadURL = (e) => {
-      e.preventDefault();
+
       props.onSelectItem(props.item);
       props.fetchedItems[props.item.id] = 'read';
       storeItemStatus(props.item.id, 'read');
@@ -35,8 +36,10 @@ function ItemHeader(props) {
     }
 
    return <div>
-      <a className="itemTitle " onClick={loadURL} href={props.item.url}>{props.item.title}</a>
+      {/* <a className="itemTitle" onClick={loadURL} href={props.item.url}>{props.item.title}</a> */}
+      <NavLink className="itemTitle" key={props.item.id} to={`/item/${props.item.id}`} onClick={loadURL} >
       <span className="domain">{props.item.title}</span>
+      </NavLink>
       <p>{props.fetchedItems[props.item.id]}</p>
    </div>
 }

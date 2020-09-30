@@ -17,16 +17,13 @@ export default class Preferences extends React.Component {
         
         this.props.onItemSizeChange(e.target.value);
     }
-
-    hidePreferenceLog= () => {
-        this.props.hidePrefs();
-    }
     
-    savePreferences = (itemSize, color) => {
+    savePreferences = () => {
         this.props.applyPreferences({
             itemSize: this.props.itemSize,
             color: this.props.color
         });
+        this.props.history.goBack();
     }
 
 
@@ -57,7 +54,7 @@ export default class Preferences extends React.Component {
             </label>
             <div class="dialogButtons">
                 <button onClick={this.savePreferences}>OK</button>
-                <button onClick={this.hidePreferenceLog}>Cancel</button>
+                <button onClick={() => this.props.history.goBack()}>Cancel</button>
             </div>
         </div>
     </div>

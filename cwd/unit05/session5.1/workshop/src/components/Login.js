@@ -24,7 +24,7 @@ export class Login extends React.Component {
         loginFailure: !isLoggedIn
       });
       if (isLoggedIn) {
-        //TODO: here we need to redirect to the homepage
+        this.props.history.push("/");
       }
     });
   };

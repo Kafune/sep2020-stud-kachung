@@ -18,7 +18,8 @@ const DelaysOnDate = props => {
   const dateId = props.match.params.dateId;
   const delays = DataAPI.getDelaysOnDate(dateId);
 
-  return <div className="content">
+  return (
+  <div className="content">
     {delays.length > 0 ? (
       delays.map(({id, from, to, minutesHuman }) => (
         <p key={id}>
@@ -29,6 +30,7 @@ const DelaysOnDate = props => {
       <p>No delays for this date.</p>
     )}
   </div>
+  )
 }
 
 const DelaysList = () => {
