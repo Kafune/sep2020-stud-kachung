@@ -22,7 +22,7 @@ function ItemHeader(props) {
 
    const storeItemStatus = (id, status) => {
       const url = "http://localhost:3000/itemStatuses/" + id;
-      const response = fetch(url, {
+      fetch(url, {
         method: "PUT",
         headers: {
           'Content-Type': 'text/plain'

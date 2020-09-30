@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function ShowPage(props) {
    <iframe class="IFrameView" src={props.url} frameborder="0" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin" />
+   console.log(props.url);
 }
 
 export class RrHNApp extends React.Component {
@@ -126,6 +127,7 @@ export class RrHNApp extends React.Component {
                </Route> */}
                <Route path="/item/:id" render={(routeProps) => {
                   <ShowPage url={routeProps.match.params.id}/>
+                  // {console.log(routeProps.match.params.id)}
                }
             }/>
                   {/* <iframe class="IFrameView" src={this.state.selectedValue} frameborder="0" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin"></iframe> */}
