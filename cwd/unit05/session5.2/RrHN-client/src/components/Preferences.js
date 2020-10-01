@@ -22,7 +22,7 @@ export default function Preferences(props) {
                 </select>
             </label>
             <div class="dialogButtons">
-                <button onClick={props.savePreferences}>OK</button>
+                <button onClick={props.applyPreferences}>OK</button>
                 <button onClick={() => props.history.goBack()}>Cancel</button>
             </div>
         </div>
