@@ -7,9 +7,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function ShowPage(props) {
    console.log(props);
-   if (!props.item) {
-      return <h1>A ma la ma ding dong</h1>
-   }
+
    return <iframe class="IFrameView" src={props.item.url} frameborder="0" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin" />
 }
 
@@ -59,10 +57,8 @@ export class RrHNApp extends React.Component {
       // this.setState({
       //    selectedValue: item.url
       // });
-      this.state.items.find(() => {
-         return item.id
-      });
-
+      console.log(this.state.items);
+      // return item;
    };
 
    handleItemSize = (itemSizeValue) => {
@@ -105,7 +101,7 @@ export class RrHNApp extends React.Component {
                   </Link>
                </header>
                <div id="ListMainContent">
-                  <ItemList list={this.state.items} onSelect={this.onSelectItem} itemSize={preferences.itemSize}
+                  <ItemList list={this.state.items} itemSize={preferences.itemSize}
                      fetchedItems={this.state.itemStatus}/>
                </div>
                <div id="ListFooter">
@@ -125,15 +121,10 @@ export class RrHNApp extends React.Component {
                   onItemSizeChange={this.handleItemSize} onColorChange={this.handleColorChange}
                   hidePrefs={this.handleClosePrefLog} applyPreferences={this.setPreferences} {...routeProps}/>
                }/>
-               {/* <Route path="/item/:id">
-                     {(props) => <pre>{JSON.stringify(props, null, 2)}</pre>}
-               </Route> */}
                <Route path="/item/:id" render={(routeProps) => {
-                  return <ShowPage item={this.state.items.find(item => item.id === routeProps.match.params.id)} />
-                  // {console.log(routeProps.match.params.id)}
+                  return <ShowPage item={this.state.items.find(item => item.id == routeProps.match.params.id)} />
                }
             }/>
-                  {/* <iframe class="IFrameView" src={this.state.selectedValue} frameborder="0" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin"></iframe> */}
             </Switch>
          </div>
       </div>
