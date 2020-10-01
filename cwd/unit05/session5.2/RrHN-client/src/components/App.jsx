@@ -53,14 +53,6 @@ export class RrHNApp extends React.Component {
          })
    }
 
-   onSelectItem = (item) => {
-      // this.setState({
-      //    selectedValue: item.url
-      // });
-      console.log(this.state.items);
-      // return item;
-   };
-
    handleItemSize = (itemSizeValue) => {
       this.setState({
          preferences: {
