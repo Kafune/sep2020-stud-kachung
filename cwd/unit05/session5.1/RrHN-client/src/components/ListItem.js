@@ -13,8 +13,7 @@ export default function ListItem(props) {
 
 function ItemHeader(props) {
    // const domain = (props.item.url) ? props.item.url.split(' ://') : "";
-   const loadURL = (e) => {
-
+   const loadURL = () => {
       props.onSelectItem(props.item);
       props.fetchedItems[props.item.id] = 'read';
       storeItemStatus(props.item.id, 'read');

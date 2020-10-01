@@ -6,8 +6,11 @@ import Preferences from './Preferences';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom'
 
 function ShowPage(props) {
-   <iframe class="IFrameView" src={props.url} frameborder="0" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin" />
-   console.log(props.url);
+   console.log(props);
+   if (!props.item) {
+      return <h1>A ma la ma ding dong</h1>
+   }
+   return <iframe class="IFrameView" src={props.item.url} frameborder="0" sandbox="allow-forms allow-modals allow-popups allow-scripts allow-same-origin" />
 }
 
 export class RrHNApp extends React.Component {
@@ -126,7 +129,7 @@ export class RrHNApp extends React.Component {
                      {(props) => <pre>{JSON.stringify(props, null, 2)}</pre>}
                </Route> */}
                <Route path="/item/:id" render={(routeProps) => {
-                  <ShowPage url={routeProps.match.params.id}/>
+                  return <ShowPage item={this.state.items.find(item => item.id === routeProps.match.params.id)} />
                   // {console.log(routeProps.match.params.id)}
                }
             }/>
