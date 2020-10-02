@@ -105,9 +105,6 @@ webSocketServer.on('connection', function connection(websocket) {
       //beware! webSocketServer.clients is a set, not an array. So use size and destructuring.
       const [client1, client2] = webSocketServer.clients
 
-      client1.score = 0;
-      client2.score = 0;
-
       if(client1.choice) {
          console.log(client1.userName);
          client1.ownScore = client1.score;
@@ -124,6 +121,8 @@ webSocketServer.on('connection', function connection(websocket) {
       }
       
       if(webSocketServer.clients.size == 2 && client1.choice != undefined && client2.choice != undefined) {
+         client1.score = 0;
+         client2.score = 0;
          
          let result = playGame(client1, client2)
 
@@ -139,7 +138,7 @@ webSocketServer.on('connection', function connection(websocket) {
             result.loser.send(prefabMessage.LOSE(result.loser))
          }
          client1.choice = "";
-         client2.choice = ""
+         client2.choice = "";
       }
       
    
