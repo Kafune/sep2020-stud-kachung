@@ -54,7 +54,7 @@ function opponentChoiceMessage(opponentName) {
 
 //TODO: Add some nessecary properties
 function loseMessage(loser) {
-   return JSON.stringify({messageType: 'LOSE', ownScore: loser.score, opponentName: loser.opponent.userName, opponentScore: loser.opponent.score})
+   return JSON.stringify({messageType: 'LOSE', ownScore: loser.score, opponentName: loser.opponentName, opponentScore: loser.opponentScore})
 }
 
 //TODO: Add some nessecary properties
@@ -68,7 +68,7 @@ function tieMessage(){
 
 //TODO: Add some nessecary properties
 function winMessage(winner){
-   return JSON.stringify({messageType: "WIN", ownScore: winner.score, opponentName: winner.opponent.userName, opponentScore: winner.opponent.score})
+   return JSON.stringify({messageType: "WIN", ownScore: winner.score, opponentName: winner.opponentName, opponentScore: winner.opponentScore})
 }
 
 
@@ -84,33 +84,43 @@ function playGame(player1Socket, player2Socket){
 }
 
 webSocketServer.on('connection', function connection(websocket) {
-   console.log("CONNECTION CREATED");
 
-   console.log(webSocketServer.clients.size)
+   if(webSocketServer.clients.size > 2) {
+      console.log("Too many players.")
+      websocket.reason = "Too many players."
+      websocket.send(websocket.reason);
+      websocket.close();
+      return false;
+   }
+
+   console.log("CONNECTION CREATED");
+   
 
    websocket.on('message', function incoming(message) {
       const messageObject = JSON.parse(message)
       websocket.choice = messageObject.choice
       websocket.userName = messageObject.userName
      
-      console.log(websocket.userName)
       //Check whether or not both servers have chosen something
       //beware! webSocketServer.clients is a set, not an array. So use size and destructuring.
       const [client1, client2] = webSocketServer.clients
-      console.log(client1.userName)
+
+      client1.score = 0;
+      client2.score = 0;
 
       if(client1.choice) {
-         console.log(client1.opponentName)
-
-         client1.userName = websocket.userName
-
+         console.log(client1.userName);
+         client1.ownScore = client1.score;
+         client2.opponentName = client1.userName;
+         client2.opponentScore = client1.score;
          client1.send(prefabMessage.CHOICE_ACCEPTED());
-         client2.send(prefabMessage.OPPONENT_CHOICE(client1.opponentName));
+         client2.send(prefabMessage.OPPONENT_CHOICE(client2.opponentName));
       } else {
-         client2.userName = websocket.userName
+         client2.ownScore = client2.score;
+         client1.opponentName = client2.userName;
+         client1.opponentScore = client2.score;
          client2.send(prefabMessage.CHOICE_ACCEPTED());
-         client1.send(prefabMessage.OPPONENT_CHOICE(client2.opponentName));
-
+         client1.send(prefabMessage.OPPONENT_CHOICE(client1.opponentName));
       }
       
       if(webSocketServer.clients.size == 2 && client1.choice != undefined && client2.choice != undefined) {
@@ -124,7 +134,7 @@ webSocketServer.on('connection', function connection(websocket) {
 
          } else {
             console.log("winner")
-            
+            result.winner.score++;
             result.winner.send(prefabMessage.WIN(result.winner))
             result.loser.send(prefabMessage.LOSE(result.loser))
          }
