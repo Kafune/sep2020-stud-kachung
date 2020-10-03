@@ -108,13 +108,11 @@ webSocketServer.on('connection', function connection(websocket) {
       client2.score = 0;
 
       if(client1.choice) {
-         console.log(client2.userName);
+         console.log(client1.userName);
          client1.ownScore = client1.score;
          
-
-         client1.opponentName = client2.userName;
-         client1.opponentScore = client2.score;
-
+         client2.opponentName = client1.userName;
+         client2.opponentScore = client1.score;
          client1.send(prefabMessage.CHOICE_ACCEPTED());
          client2.send(prefabMessage.OPPONENT_CHOICE(client2.opponentName));
       } 
@@ -122,8 +120,8 @@ webSocketServer.on('connection', function connection(websocket) {
       if (client2.choice) {
          client2.ownScore = client2.score;
 
-         client2.opponentName = client1.userName;
-         client2.opponentScore = client1.score;
+         client1.opponentName = client2.userName;
+         client1.opponentScore = client2.score;
          client2.send(prefabMessage.CHOICE_ACCEPTED());
          client1.send(prefabMessage.OPPONENT_CHOICE(client1.opponentName));
       }
