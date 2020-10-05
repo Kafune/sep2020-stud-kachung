@@ -23,9 +23,6 @@ const playerSchema = new mongoose.Schema({
     }
 });
 
-const Player = mongoose.model('Player', playerSchema);
-
-
 
 playerSchema.methods.getLocationInformation = async function () {
 
@@ -36,3 +33,4 @@ playerSchema.methods.goToLocation = async function (newLocationName) {
 }
 
 //Place your model definition here below the method definitions
+const Player = mongoose.model('Player', playerSchema);
