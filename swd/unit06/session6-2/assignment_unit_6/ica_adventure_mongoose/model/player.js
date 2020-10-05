@@ -1,8 +1,31 @@
 const mongoose = require('mongoose');
 
-const playerSchema = new mongoose.Schema({
+require ('./location');
+const Location = mongoose.model('Location');
 
+const playerSchema = new mongoose.Schema({
+    _id: {
+        type: String,
+        required: 'true'
+    },
+    items: {
+        type: [String],
+        required: true
+    },
+    currentLocation: {
+        type: String,
+        required: true
+    },
+    map: {
+        type: [Map],
+        of: Location,
+        required: true
+    }
 });
+
+const Player = mongoose.model('Player', playerSchema);
+
+
 
 playerSchema.methods.getLocationInformation = async function () {
 

@@ -11,7 +11,7 @@ const Player = mongoose.model('Player');
 mongoose.connect(`mongodb://localhost:27017/${dbName}`,  {useNewUrlParser: true } ).then(() => {
     return seedLocation();
 }).then(() => {
-//    return seedPlayer();
+   return seedPlayer();
 }).catch(err => {
     console.log(err);
 }).then(() => {
