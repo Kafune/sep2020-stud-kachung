@@ -25,7 +25,8 @@ const playerSchema = new mongoose.Schema({
 
 
 playerSchema.methods.getLocationInformation = async function () {
-
+    console.log(this.currentLocation)
+    return await Location.findById(this.currentLocation)
 }
 
 playerSchema.methods.goToLocation = async function (newLocationName) {
