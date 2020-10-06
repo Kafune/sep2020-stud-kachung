@@ -22,7 +22,21 @@ router.get('/:player/where', (req, res) => {
 });
 
 router.put('/:player/goto', (req, res) => {
-    res.json('replace me with your code');
+    const playerId = Player.findById(req.params.player);
+    const newLocationName = req.query.location;
+
+
+    //if exits on currentLocation includes newLocation
+
+    //if !newLocation in player.map
+
+    const newLocation = Location.findById(newLocationName);
+
+    player.map.push(newLocation);
+
+    await player.save();
+
+    res.json(newLocation);
 });
 
 
