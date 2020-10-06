@@ -21,22 +21,37 @@ router.get('/:player/where', (req, res) => {
     });
 });
 
-router.put('/:player/goto', (req, res) => {
-    const playerId = Player.findById(req.params.player);
+router.put('/:player/goto', async (req, res) => {
+    const player = await Player.findById(req.params.player);
+    const currentLocation = await Location.findById(player.currentLocation);
     const newLocationName = req.query.location;
 
+    console.log(player.map)
+    console.log(currentLocation);
+    console.log(currentLocation.exits);
 
     //if exits on currentLocation includes newLocation
+    if(currentLocation.exits.includes(newLocationName) ) {
+        console.log("true");
+        player.currentLocation = newLocationName;
+        const newLocation = await Location.findById(player.currentLocation);
+
+        await player.map.push(newLocation);
+    } else {
+        const newLocation = await Location.findById(newLocationName);
+
+        console.log(newLocation.description)
+    }
+
 
     //if !newLocation in player.map
 
-    const newLocation = Location.findById(newLocationName);
+    // await player.map.push(newLocation);
 
-    player.map.push(newLocation);
-
+    //await goToLocation(newLocationName)
     await player.save();
 
-    res.json(newLocation);
+    // res.json(newLocationName.description);
 });
 
 

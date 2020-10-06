@@ -30,7 +30,8 @@ playerSchema.methods.getLocationInformation = async function () {
 }
 
 playerSchema.methods.goToLocation = async function (newLocationName) {
-
+    
+    // return await this.map newLocationName
 }
 
 //Place your model definition here below the method definitions
