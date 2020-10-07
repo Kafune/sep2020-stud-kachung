@@ -6,6 +6,7 @@ import Moment from 'moment';
 
 import {Logo} from './Logo';
 import {SettingsIcon} from './Preferences';
+import SearchBar from './searchBar';
 
 
 import {showPrefsAction, markAsSeenAction, toggleItemAction} from '../reducers';
@@ -83,6 +84,7 @@ export const ItemList = ReactRedux.connect(mapStateToProps, mapDispatchToProps)(
 function ListHeader(props) {
   return <header id="ListHeader" className="panelHeader">
     <Logo/>	<span className="settingsIcon" onClick={props.doShowPrefs}><SettingsIcon/></span>
+    <SearchBar/>
   </header>
 }
 

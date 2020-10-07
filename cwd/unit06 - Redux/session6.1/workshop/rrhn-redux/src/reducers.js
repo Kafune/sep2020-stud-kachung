@@ -10,11 +10,13 @@ import initialItemStatuses from './itemStatuses';
 
 // Action Creators:
 
+const TOGGLE_ITEM = "toggleItemAction";
+
 export function markAsSeenAction(listSize){
   return { type: "markAsSeenAction", listSize };
 }
 export function toggleItemAction(item){
-  return { type: "toggleItemAction", item };
+  return { type: TOGGLE_ITEM, item };
 }
 
 // Reducer:
@@ -30,7 +32,7 @@ function hnItemsReducer( state = initialHNItemsState, action ) {
   // (a new version of) the state. Reducers must always return a (new) state.
   switch(action.type) {
 
-  case 'toggleItemAction':
+  case TOGGLE_ITEM:
     if(state.selectedItem){
       if( action.item.id === state.selectedItem.id) {
         return { ...state, selectedItem: null };
@@ -60,11 +62,33 @@ function hnItemsReducer( state = initialHNItemsState, action ) {
 //---------------------------------------------------------------------
 
 // Action Creators:
+const SHOW_PREFS = "showPrefsAction";
+const SAVE_PREFS = "savePrefsAction";
+const CLOSE_PREFS = "closePrefsAction";
+const CHANGE_COLOR = "changeColorAction";
+const CHANGE_ITEM_SIZE = "changeItemSizeAction"
 
 export function showPrefsAction() {
-  return { type: "showPrefsAction" };
+  return { type: SHOW_PREFS };
 }
 // TODO: Add action creators for other redux-actions such as Cancel and OK, but also for editing controlled inputs for color and listSize.
+
+export function closeAndApplyPrefsAction() {
+  return {type: SAVE_PREFS}
+}
+
+export function closePrefsAction() {
+  return {type: CLOSE_PREFS };
+}
+
+export function editColorAction(color) {
+  return {type: CHANGE_COLOR, color};
+}
+
+export function editListSizeAction(itemSize) {
+  return {type: CHANGE_ITEM_SIZE, itemSize}
+}
+
 
 
 // Reducer:
@@ -82,7 +106,7 @@ function preferencesReducer(state = initialPreferencesState, action) {
   // (a new version of) the state. Reducers must always return a (new) state.
   switch(action.type) {
 
-  case 'showPrefsAction': 
+  case SHOW_PREFS: 
     let changes = { showingPrefs:    true,
                     editingColor:    state.currentColor,
                     editingListSize: state.currentListSize
@@ -97,12 +121,33 @@ function preferencesReducer(state = initialPreferencesState, action) {
   }
 }
 
+const CHANGE_QUERY = "CHANGE_QUERY";
+
+
+export function changeQuery (query) {
+  return {
+    type: CHANGE_QUERY,
+    payload: query
+  }
+}
+
+
+function searchQueryReducer(state='', action) {
+  switch(action.type) {
+    case CHANGE_QUERY:
+      return action.payload;
+    default:
+      return state;
+  }
+}
 //===========================================================================
 //  Combining the reducers and their state into a single reducer managing
 //  a single state
 //---------------------------------------------------------------------------
 
+
 export const mainReducer = Redux.combineReducers({
   hnItems:  hnItemsReducer,
-  prefs:    preferencesReducer
+  prefs:    preferencesReducer,
+  search:   searchQueryReducer,
 })

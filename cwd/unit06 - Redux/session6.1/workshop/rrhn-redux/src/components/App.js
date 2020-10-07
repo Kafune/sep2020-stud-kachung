@@ -1,46 +1,44 @@
 import React from 'react'
 import * as ReactRedux from 'react-redux';
 
-import {ItemList}   from './ItemList';
-import {IFrameView} from './IFrameView';
-import {PreferencesDialog} from './Preferences';
+import { ItemList } from './ItemList';
+import { IFrameView } from './IFrameView';
+import { PreferencesDialog } from './Preferences';
 
 //============================================================================
 //  The React component that renders the UI for the entire App.
 //----------------------------------------------------------------------------
 
-class AppUI extends React.Component {
-
-  render() {
-    let contentPanel;
-    if(this.props.showingPrefs) {
-      contentPanel =
-        <div id="ContentPanel" className="preferences">
-          <PreferencesDialog/>
-        </div>
-    } else if( this.props.selectedItem !== null && this.props.selectedItem !== undefined) {
-      contentPanel =
-        <div id="ContentPanel" className="item">
-          <IFrameView url={this.props.selectedItem.url} />
-        </div>
-    } else {
-      contentPanel =
-        <div id="ContentPanel" className="empty">
-          <h2>No item selected yet.</h2>
-          <p>Select an item in the colum on the left.</p>
-        </div>;
-    }
-    const cssClasses = "App " + this.props.color;
-    return (
-      <div className={cssClasses}>
+function AppUI(props) {
+  let contentPanel;
+  if (props.showingPrefs) {
+    contentPanel =
+      <div id="ContentPanel" className="preferences">
+        <PreferencesDialog />
+      </div>
+  } else if (props.selectedItem !== null && props.selectedItem !== undefined) {
+    contentPanel =
+      <div id="ContentPanel" className="item">
+        <IFrameView url={props.selectedItem.url} />
+      </div>
+  } else {
+    contentPanel =
+      <div id="ContentPanel" className="empty">
+        <h2>No item selected yet.</h2>
+        <p>Select an item in the colum on the left.</p>
+      </div>;
+  }
+  const cssClasses = "App " + props.color;
+  return (
+    <div className={cssClasses}>
       <div id="ListPanel">
-        <ItemList/>
+        <ItemList />
       </div>
       {contentPanel}
-      </div>
-    )
-  }
+    </div>
+  )
 }
+
 
 //============================================================================
 //  Connecting the ItemListUI to the Redux Store results in a new
@@ -58,9 +56,9 @@ class AppUI extends React.Component {
 
 function mapStateToProps(state) {
   return {
-    selectedItem:  state.hnItems.selectedItem,
-    showingPrefs:  state.prefs.showingPrefs,
-    color:         state.prefs.currentColor
+    selectedItem: state.hnItems.selectedItem,
+    showingPrefs: state.prefs.showingPrefs,
+    color: state.prefs.currentColor
   }
 }
 
