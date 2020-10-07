@@ -30,8 +30,12 @@ playerSchema.methods.getLocationInformation = async function () {
 }
 
 playerSchema.methods.goToLocation = async function (newLocationName) {
-    
-    // return await this.map newLocationName
+    const location = await Location.findById(this.currentLocation);
+    console.log(location)
+    // if() {
+    //     await Player.map.push(Location.findById(newLocationName))
+    // }
+    return await Player.updateOne({[this.currentLocation]: newLocationName})
 }
 
 //Place your model definition here below the method definitions

@@ -25,33 +25,32 @@ router.put('/:player/goto', async (req, res) => {
     const player = await Player.findById(req.params.player);
     const currentLocation = await Location.findById(player.currentLocation);
     const newLocationName = req.query.location;
+    const newLocation = await Location.findById(newLocationName);
 
-    console.log(player.map)
+    console.log(player.map);
     console.log(currentLocation);
     console.log(currentLocation.exits);
 
     //if exits on currentLocation includes newLocation
-    if(currentLocation.exits.includes(newLocationName) ) {
+    if(currentLocation.exits.includes(newLocationName)) {
         console.log("true");
+        
+        await player.goToLocation(newLocationName);
+        
         player.currentLocation = newLocationName;
-        const newLocation = await Location.findById(player.currentLocation);
+        // const newLocation = await Location.findById(player.currentLocation);
 
-        await player.map.push(newLocation);
+        // await player.currentLocation.updateOne({currentLocation: newLocation});
     } else {
-        const newLocation = await Location.findById(newLocationName);
-
-        console.log(newLocation.description)
+        throw new Error("Bestaat niet!");
     }
-
-
-    //if !newLocation in player.map
-
-    // await player.map.push(newLocation);
 
     //await goToLocation(newLocationName)
     await player.save();
 
-    // res.json(newLocationName.description);
+    res.json({
+        description: newLocation.description
+    });
 });
 
 
