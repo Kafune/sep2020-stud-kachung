@@ -6,7 +6,7 @@ import Moment from 'moment';
 
 import {Logo} from './Logo';
 import {SettingsIcon} from './Preferences';
-import SearchBar from './searchBar';
+import SearchBar from './SearchBar';
 
 
 import {showPrefsAction, markAsSeenAction, toggleItemAction} from '../reducers';

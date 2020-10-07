@@ -63,6 +63,11 @@ class PreferencesDialogUI extends React.Component {
 function mapStateToProps(state) {
   return {
     // TODO:  add the props that PreferencesDialogUI needs
+    showingPrefs: state.prefs.showingPrefs,
+    editingColor: state.prefs.editingColor,
+    editingListSize: state.prefs.editingListSize,
+    currentColor: state.prefs.currentColor,
+    currentListSize: state.prefs.currentListSize
   }
 }
 
@@ -71,7 +76,10 @@ function mapStateToProps(state) {
 //   that they then send to the reducers by calling the Redux-supplied function 'dispatch'.
 function mapDispatchToProps(dispatch) {
   return {
-    // TODO:  add the dispatched action-creators that PreferencesDialogUI needs
+    doCancelPrefs: () => {dispatch(closePrefsAction())},
+    doCloseAndApplyPrefs: () => {dispatch(closeAndApplyPrefsAction())},
+    doEditListSize: (listSize) => {dispatch(editListSizeAction(listSize))},
+    doEditColor: (color) => {dispatch(editColorAction(color))}
   }
 }
 
