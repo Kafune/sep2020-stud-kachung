@@ -14,11 +14,24 @@ const TOGGLE_ITEM = "toggleItemAction";
 const REQUEST_ITEMS = "requestItems";
 const REQUEST_STATUSSES = "requestStatus";
 
-export function markAsSeenAction(listSize) {
+function markAsSeenAction(listSize) {
   return { type: "markAsSeenAction", listSize };
 }
-export function toggleItemAction(item) {
+function toggleItemAction(item) {
   return { type: TOGGLE_ITEM, item };
+}
+
+export function updateAllShownListItems(listSize) {
+  return (dispatch) => {
+    let url = 'http://localhost:3000/itemStatuses';
+    return fetch(url, {
+      method: "PUT",
+      headers: {
+        'Content-Type': 'text-plain'
+      }
+    })
+    .then(() => dispatch(markAsSeenAction(listSize)))
+  }
 }
 
 function requestItems(items) {

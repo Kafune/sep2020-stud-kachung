@@ -9,7 +9,7 @@ import {SettingsIcon} from './Preferences';
 import SearchBar from './SearchBar';
 
 
-import {showPrefsAction, markAsSeenAction, toggleItemAction, updateStatusses} from '../reducers';
+import {showPrefsAction, updateAllShownListItems, updateStatusses} from '../reducers';
 
 //============================================================================
 //  The React component that renders the UI for the ItemList
@@ -63,7 +63,7 @@ function mapStateToProps(state) {
 function mapDispatchToProps(dispatch) {
   return {
     doShowPrefs:    () =>         dispatch(showPrefsAction()),
-    onMarkAsSeen:   (listSize) => dispatch(markAsSeenAction(listSize)),
+    onMarkAsSeen:   (listSize) => dispatch(updateAllShownListItems(listSize)),
     onToggleItem:   (item) =>     dispatch(updateStatusses(item))
     }
 }
