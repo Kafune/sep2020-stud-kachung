@@ -11,6 +11,8 @@ import initialItemStatuses from './itemStatuses';
 // Action Creators:
 
 const TOGGLE_ITEM = "toggleItemAction";
+const REQUEST_ITEMS = "requestItems"
+const RECEIVE_ITEMS
 
 export function markAsSeenAction(listSize) {
   return { type: "markAsSeenAction", listSize };
@@ -19,6 +21,29 @@ export function toggleItemAction(item) {
   return { type: TOGGLE_ITEM, item };
 }
 
+export function requestItems(items) {
+  return {
+    type: REQUEST_ITEMS,
+    items
+  }
+}
+
+export function receiveItems(items, json) {
+  return
+}
+
+export function fetchItems(hnItem) {
+  return function (dispatch) {
+    dispatch(requestITems(hnItem));
+    let url = 'http://localhost:3000/hn/topstories';
+    return fetch(url)
+    .then(response => {
+      response.json();
+    }).then(json => {
+      dispatch(receiveItems(hnItem, json))
+    })
+  }
+}
 // Reducer:
 
 const initialHNItemsState = {
