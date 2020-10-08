@@ -11,8 +11,8 @@ import initialItemStatuses from './itemStatuses';
 // Action Creators:
 
 const TOGGLE_ITEM = "toggleItemAction";
-const REQUEST_ITEMS = "requestItems"
-const RECEIVE_ITEMS
+const REQUEST_ITEMS = "requestItems";
+const REQUEST_STATUSSES = "requestStatus";
 
 export function markAsSeenAction(listSize) {
   return { type: "markAsSeenAction", listSize };
@@ -21,35 +21,68 @@ export function toggleItemAction(item) {
   return { type: TOGGLE_ITEM, item };
 }
 
-export function requestItems(items) {
+function requestItems(items) {
   return {
     type: REQUEST_ITEMS,
-    items
+    payload: items
   }
 }
 
-export function receiveItems(items, json) {
-  return
-}
-
-export function fetchItems(hnItem) {
-  return function (dispatch) {
-    dispatch(requestITems(hnItem));
+export function fetchItems() {
+  return dispatch => {
     let url = 'http://localhost:3000/hn/topstories';
     return fetch(url)
-    .then(response => {
-      response.json();
-    }).then(json => {
-      dispatch(receiveItems(hnItem, json))
-    })
+      .then(response => {
+        console.log(response)
+        return response.json();
+      }).then(json => {
+        // console.log(hnItem);
+        console.log(json);
+        dispatch(requestItems(json))
+      })
   }
 }
+
+function requestStatusses(statusses) {
+  return {
+    type: REQUEST_STATUSSES,
+    payload: statusses
+  }
+}
+
+export function fetchStatusses() {
+  return dispatch => {
+    let url = 'http://localhost:3000/itemStatuses';
+    return fetch(url)
+      .then(response => {
+        return response.json();
+      })
+      .then(json => {
+        dispatch(requestStatusses(json))
+      })
+  }
+}
+
+export function updateStatusses(item) {
+    return (dispatch) => {
+      let url = 'http://localhost:3000/itemStatuses/'+item.id;
+      return fetch(url, {
+        method: "PUT",
+        headers: {
+          'Content-Type': 'text-plain'
+        },
+        body: item.id
+      })
+      .then(() => dispatch(toggleItemAction(item)))
+    }
+}
+
 // Reducer:
 
 const initialHNItemsState = {
   items: initialFrontPageData,
   selectedItem: null,
-  statuses: initialItemStatuses,
+  statuses: initialItemStatuses
 }
 
 function hnItemsReducer(state = initialHNItemsState, action) {
@@ -76,6 +109,18 @@ function hnItemsReducer(state = initialHNItemsState, action) {
       })
       return { ...state, statuses: newStatuses };
     // break; not needed: this branch always returns from function
+
+    case REQUEST_ITEMS:
+      return {
+        ...state,
+        items: action.payload
+      }
+
+    case REQUEST_STATUSSES:
+      return {
+        ...state,
+        statuses: action.payload
+      }
 
     default:
       return state;

@@ -2,14 +2,14 @@ import React from 'react';
 import * as ReactRedux from 'react-redux';
 
 import parseUrl from 'url-parse';
-import Moment from 'moment';
+import Moment, { HTML5_FMT } from 'moment';
 
 import {Logo} from './Logo';
 import {SettingsIcon} from './Preferences';
 import SearchBar from './SearchBar';
 
 
-import {showPrefsAction, markAsSeenAction, toggleItemAction} from '../reducers';
+import {showPrefsAction, markAsSeenAction, toggleItemAction, updateStatusses} from '../reducers';
 
 //============================================================================
 //  The React component that renders the UI for the ItemList
@@ -24,7 +24,7 @@ class ItemListUI extends React.Component {
             status={this.props.statuses[itm.id]}
             key={itm.id}
             isSelected={this.props.selectedItem && itm.id===this.props.selectedItem.id}
-            onToggleItem={this.props.onToggleItem} />
+            onToggleItem={this.props.onToggleItem}/>
     )
 
     return <div className="ItemList">
@@ -64,8 +64,8 @@ function mapDispatchToProps(dispatch) {
   return {
     doShowPrefs:    () =>         dispatch(showPrefsAction()),
     onMarkAsSeen:   (listSize) => dispatch(markAsSeenAction(listSize)),
-    onToggleItem:   (item) =>     dispatch(toggleItemAction(item))
-  }
+    onToggleItem:   (item) =>     dispatch(updateStatusses(item))
+    }
 }
 
 // Here a new React component is created that will contain the ItemListUI, and
