@@ -40,11 +40,11 @@ playerSchema.methods.goToLocation = async function (newLocationName) {
         console.log(newLocation.exits)
         console.log(JSON.stringify(newLocation));
         // verwijst naar de .map functie i.p.v de locatie map in de db.
-        // await this.map.update({
-        //     _id: newLocation._id,
-        //     description: newLocation.description,
-        //     exits: newLocation.exits
-        // })
+        await this['map'].push({
+            _id: newLocation._id,
+            description: newLocation.description,
+            exits: newLocation.exits
+        })
     }
     return await this.updateOne({[this.currentLocation]: newLocationName})
 }

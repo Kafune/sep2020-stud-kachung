@@ -46,7 +46,7 @@ router.put('/:player/goto', async (req, res) => {
         res.json({
             description: "Locatie bestaat niet!"
         })
-        throw new Error("Locatie bestaat niet!");
+        throw new Error("Locatie is niet gevonden");
     }
 });
 
