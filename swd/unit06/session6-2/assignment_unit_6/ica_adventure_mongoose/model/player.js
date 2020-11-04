@@ -6,7 +6,7 @@ const Location = mongoose.model('Location');
 const playerSchema = new mongoose.Schema({
     _id: {
         type: String,
-        required: 'true'
+        required: true
     },
     items: {
         type: [String],
