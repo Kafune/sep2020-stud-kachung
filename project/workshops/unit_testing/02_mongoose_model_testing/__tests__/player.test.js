@@ -9,7 +9,7 @@ require('../player');
 
 const Player = mongoose.model('Player');
 
-xdescribe('Player Model Tests', () => {
+describe('Player Model Tests', () => {
     beforeAll(async () => {
         await mongoose.connect('mongodb://localhost:27017/testPlayerDB', { useNewUrlParser: true });
     });
@@ -36,11 +36,26 @@ xdescribe('Player Model Tests', () => {
 
     });
     
-    xtest('item can be added if capacity is not yet exceeded', async () => {
-        
+    test('item can be added if capacity is not yet exceeded', async () => {
+        let testPlayer = await Player.findById('han');
+
+        await testPlayer.addItem('testitem');
+
+        testPlayer = await Player.findById('han').lean();
+
+        expect(testPlayer.items).toEqual(['testitem']);
     });
     
     xtest('item can not be added if nr of items equals the capacity', async () => {
+        let testPlayer = await Player.findById('han');
+        await testPlayer.addItem('testitemnr1');
+        await testPlayer.addItem('testitemnr2');
+        await testPlayer.addItem('testitemnr3');
+        await testPlayer.addItem('testitemnr4');
+
+        testPlayer = await Player.findById('han').lean();
+
+        expect(testPlayer.items).toEqual(['testitemnr1', 'testitemnr2', 'testitemnr3', 'testitemnr4']);
 
     });
 });
