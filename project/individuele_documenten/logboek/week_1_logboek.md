@@ -14,10 +14,9 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Dinsdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak            | Met Wie | Resultaat                                                        | Link                                                                            |
+|------|-----------------|---------|------------------------------------------------------------------|---------------------------------------------------------------------------------|
+| 1.75 | Plan van aanpak | Steven  | Opzet plan van aanpak  - Inleiding - Achtergrond van het project | Teams: DWA - Klas A - Sep 2020 -> Kanaal: Projectgroep - Pardellos -> Bestanden |
 
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
