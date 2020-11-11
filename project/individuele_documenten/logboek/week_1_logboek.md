@@ -21,10 +21,10 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                                                       | Met Wie             | Resultaat                                       | Link                                                                           |
+|------|------------------------------------------------------------|---------------------|-------------------------------------------------|--------------------------------------------------------------------------------|
+| 2.5  | Plan van aanpak -  Hoofdstuk 7 en bijdrage aan hoofdstuk 6 | Steven, Alex, Glenn | Plan van aanpak -  eerste versie bijna compleet | Teams: DWA - Klas A - Sep2020 -> Kanaal: Projectgroep - Pardellos -> Bestanden |
+|      |                                                            |                     |                                                 |                                                                                |
 
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
