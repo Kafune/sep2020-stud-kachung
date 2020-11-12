@@ -29,10 +29,10 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                                       | Met Wie       | Resultaat                                        | Link                                                                                                                  |
+|------|--------------------------------------------|---------------|--------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|
+| 1.5  | Helpen met taken bedenken Bij user stories | Alex en Ritse | Taken bij de user stories in het scrum bord      | [Scrum bord](https://github.com/HANICA-DWA/sep2020-project-pardellos/projects/1)                                      |
+| 3    | Wireframes front end - mobile              | Steven        | Wireframes voor de mobiele versie van de website | [Wireframes](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/8a098a7e1256870eb6b1c0b288e27663ef0b36a3) |
 
 
 ## Vrijdag
