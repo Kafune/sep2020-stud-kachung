@@ -38,7 +38,7 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Vrijdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                      | Met Wie        | Resultaat                                                                | Link                                                                                                                          |
+|------|---------------------------|----------------|--------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|
+| 3-4  | Opzet registratiepagina   | Glenn en Ritse | React functionaliteit accountregistratie grotendeels af, geen opmaak nog | [Registratie pagina](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/bea180df33d3f929237b1bfab3cea047d83c3013) |
+| 2-3  | Start registratie backend | Alleen         | Nog bezig met het koppelen aan de backend                                | [Registratie pagina](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/bea180df33d3f929237b1bfab3cea047d83c3013) |
