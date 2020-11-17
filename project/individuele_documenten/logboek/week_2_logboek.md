@@ -16,10 +16,10 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Dinsdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren  | Taak                                                  | Met Wie   | Resultaat                                                                                  | Link                                                                                                                      |
+|-------|-------------------------------------------------------|-----------|--------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| 2-2.5 | Front-end overzicht artikelen                         | Alleen    | Artikelen worden van de backend opgehaald en weergegeven op de pagina. Opmaak nog niet af. | [Artikelpagina](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/4273bbc372118fe0b2c0be64e52928ca2176a926)  |
+| 3-4   | Alle werk van front-end en back-end bij elkaar mergen | Hele team | Alle branches lopen nu gelijk en een werkend front-end/back-end                            | [Merge branches](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/2052c4d9313df02cf0c6484342871903b70cc500) |
 
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
