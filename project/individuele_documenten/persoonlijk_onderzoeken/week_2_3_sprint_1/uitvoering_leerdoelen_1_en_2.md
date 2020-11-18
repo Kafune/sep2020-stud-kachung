@@ -9,8 +9,8 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Wat heeft het opgeleverd voor jou?
 - Wat heeft het opgeleverd voor je team?
 
-(LEERDOEL 1) 
+(LEERDOEL 1) - Duidelijker worden met communiceren en meer actieve communicatie opleveren
+- De leiding genomen van een aantal daily standups en daily standdowns
 
-
-(LEERDOEL 2) 
-
+(LEERDOEL 2) - Meer ervaring met het bouwen van de front-end van een website d.m.v. React
+- test
