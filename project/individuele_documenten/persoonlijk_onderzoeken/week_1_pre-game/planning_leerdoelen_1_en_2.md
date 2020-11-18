@@ -41,7 +41,6 @@ Ik heb mijn leerdoelen bereikt als (formuleer meetbare criteria):
   *	(LEERDOEL 1)
     *	Als mijn teamleden vinden dat de communicatie beter verloopt aan het eind van de sprint, vergeleken met het begin van de sprint
     * Ik minimaal 1 daily standup heb geleid
-    * Ik minimaal 1 keer het woord neem namens de team bij een gesprek bij de coach of product owner
   *	(LEERDOEL 2) 
     * Minstens 1 pagina zelf heb aangemaakt op de front-end
     * 1 of meerdere teamleden het werk heeft nagekeken en aanpassingen heb gemaakt waar nodig is
