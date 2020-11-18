@@ -39,6 +39,10 @@ Om mijn leerdoelen te bereiken ga ik hulp vragen aan de volgende personen:
 
 Ik heb mijn leerdoelen bereikt als (formuleer meetbare criteria): 
   *	(LEERDOEL 1)
-    *	Als mijn teamleden dat de communicatie beter verloopt aan het eind van de sprint, vergeleken met het eerste sprint
+    *	Als mijn teamleden vinden dat de communicatie beter verloopt aan het eind van de sprint, vergeleken met het begin van de sprint
+    * Ik minimaal 1 daily standup heb geleid
+    * Ik minimaal 1 keer het woord neem namens de team bij een gesprek bij de coach of product owner
   *	(LEERDOEL 2) 
-    *	Mijn teamleden na laten kijken of de structuur van de webapplicatie goed is en navragen of het goed genoeg is om ermee te kunnen werken.
+    * Minstens 1 pagina zelf heb aangemaakt op de front-end
+    * 1 of meerdere teamleden het werk heeft nagekeken en aanpassingen heb gemaakt waar nodig is
+    * Het samenvoegen van mijn front-end werk is gelukt
