@@ -37,10 +37,10 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                            | Met Wie  | Resultaat                                                                                           | Link                                                     |
+|------|---------------------------------|----------|-----------------------------------------------------------------------------------------------------|----------------------------------------------------------|
+| 1    | C4 Model workshop               | Iedereen |                                                                                                     |                                                          |
+| 4-5  | Hele plan van aanpak verbeteren | Steven   | Plan van aanpak verbeterd op basis van alle feedback van gisteren, Randvoorwaarden niet helemaal af | Teams: Alle teams -> DWA sep 2020 Pardellos -> Bestanden |
 
 
 ## Vrijdag
