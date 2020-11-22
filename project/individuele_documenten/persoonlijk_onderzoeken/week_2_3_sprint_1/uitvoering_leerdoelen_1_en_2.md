@@ -18,11 +18,13 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - https://schateiland.com/blog/de-5-gouden-tips-voor-communicatie-in-teams/
 3. Hulp gevraagd?:
 - nog niet van toepassing
-4. Iets bijgesteld?:
-- Ik had eerst alleen duidelijker worden met communiceren als leerdoel, maar heb actieve communicatie erbij toegevoegd. Volgens mij zei Ritse dat ik voornamelijk aan de stille kant was, dus ik denk dat het wel mooi zou zijn als ik mezelf iets erin kan verbeteren.
-5. Voordelen voor mezelf?
+4. Welke inzichten?
 - 
-6. Voordelen voor het team?
+5. Iets bijgesteld?:
+- Ik had eerst alleen duidelijker worden met communiceren als leerdoel, maar heb actieve communicatie erbij toegevoegd. Volgens mij zei Ritse dat ik voornamelijk aan de stille kant was, dus ik denk dat het wel mooi zou zijn als ik mezelf iets erin kan verbeteren.
+6. Voordelen voor mezelf?
+- 
+7. Voordelen voor het team?
 -
 
 
@@ -32,12 +34,16 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Een taak oppakken die met front-end te maken heeft
 - Vaker mjn punten overbrengen.
 2. Vormen van onderzoek?:
-
+- https://reactjs.org/docs/hooks-overview.html
+- https://reactjs.org/docs/thinking-in-react.html
+- https://medium.com/better-programming/react-state-management-in-2020-719d10c816bf
 3. Hulp gevraagd?:
 - Niet per se hulp gevraagd, maar tijdens het mergen wel gevraagd waarom iets anders aangepakt moest worden. Merging is gedaan door Alex.
-4. Iets bijgesteld?:
-- Nee, dit leerdoel is voor mij wel duidelijk
-5. Voordelen voor mezelf?
+4. Welke inzichten?
 - 
-6. Voordelen voor het team?
+5. Iets bijgesteld?:
+- Nee, dit leerdoel is voor mij wel duidelijk
+6. Voordelen voor mezelf?
+- 
+7. Voordelen voor het team?
 - Front-end opzet van Registratie en artikeloverzicht.
