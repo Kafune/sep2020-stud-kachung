@@ -46,7 +46,11 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Vrijdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren  | Taak                                                                | Met Wie             | Resultaat                                                      | Link                                                                                                                            |
+|-------|---------------------------------------------------------------------|---------------------|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| 0.25  | Daily standup                                                       | Hele team           | Taken verdeeld                                                 |                                                                                                                                 |
+| 0.5-1 | Start onderzoek PDF implementatie                                   | Steven              | PDF.js en tutorial gevonden                                    |                                                                                                                                 |
+| 1-2   | PDF Tutorial volgen - Lang bezig geweest met PDF workers oplossen   | Steven              | Server haalt tekst van PDF via de backend.                     | [PDF tutorial](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/c7910e5a0f390be908a6bf192922dbcab9d9a2fd)         |
+| 2-3   | PDF.js uitproberen op de front-end                                  | Steven              | Krijg PDF's op front-end te zien, maar formaat niet consistent | [front-end PDF start](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/c7910e5a0f390be908a6bf192922dbcab9d9a2fd)  |
+| 1-1.5 | Onderzoek PDF's documenteren                                        | Steven              | Documentatie met resultaten van onze onderzoek                 | Alle teams -> DWA sep 2020 Pardellos -> Bestanden -> pdf-onderzoek.docx                                                         |
+| 1     | Daily standdown + Meekijken met werking Login en Registratiesysteem | Steven, Alex, Glenn | Login en registratiesysteem grotendeels werkend                | [Login en registratie](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/16d4fd3bc6f887158f70ab2740bd7fe2e7e10fea) |
