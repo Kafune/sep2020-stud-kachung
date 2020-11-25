@@ -26,10 +26,12 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren    | Taak                                                            | Met Wie                                                                                                       | Resultaat                                                                                                                     | Link |
+|---------|-----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------|------|
+| 0.75    | Gesprek met scrum coach                                         | Team en scrum coach                                                                                           | Het team weet wat er voor de sprint review moet regelen                                                                       |      |
+| 1       | Leerdoelen aanvullen en voorbereiding gesprek met Skills docent | Alleen                                                                                                        |                                                                                                                               |      |
+| 0.5     | Leerdoelen bespreking                                           | Team en Skills docent                                                                                         | Feedback op leerdoelen voor elk teamlid                                                                                       |      |
+| 1.5 - 2 | Opzet software guidebook                                        | Hoofdstukken Context en functioneel overzicht klaar voor feedback, begin Kwaliteitsattributen en Beperkingen. | [Software guidebook](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/80c7b7945b77c10ca4df0a9a71a51a40034fd441) |      |
 
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
