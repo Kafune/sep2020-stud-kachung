@@ -17,17 +17,23 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 2. Vormen van onderzoek?:
 - https://penbimprovement.com/leiderschap/12-concrete-tips-om-je-communicatie-te-verbeteren/
 - https://schateiland.com/blog/de-5-gouden-tips-voor-communicatie-in-teams/
+Dit zijn artikelen die meer gericht zijn op communicatie in teamverband. Wel handige tips om te weten, maar niet precies wat ik zoek voor dit specifieke leerdoel.
+
+- https://hetnlpcollege.nl/beter-communiceren/
+- https://www.managementsupport.nl/communiceren/nieuws/2020/03/efficient-communiceren-houd-je-aan-de-basisregels-10118010
+Het efficient communiceren ligt meer aan de kant van mijn leerdoel, omdat duidelijker communiceren daar ook een onderdeel is.
+
 3. Hulp gevraagd?:
 - nog niet van toepassing
 4. Welke inzichten?
 - 
 5. Iets bijgesteld?:
-- Ik had eerst alleen duidelijker worden met communiceren als leerdoel, maar heb actieve communicatie erbij toegevoegd. Volgens mij zei Ritse dat ik voornamelijk aan de stille kant was, dus ik denk dat het wel mooi zou zijn als ik mezelf iets erin kan verbeteren.
+- Ik had eerst alleen duidelijker worden met communiceren als leerdoel, maar heb actieve communicatie erbij toegevoegd. Volgens mij zei Ritse dat ik voornamelijk aan de stille kant ben, dus ik denk dat het wel mooi zou zijn als ik mezelf iets erin kan verbeteren.
 6. Voordelen voor mezelf?
 - Begin te merken dat initiatief nemen makkelijker wordt. Zit minder te twijfelen om dat te doen
 - 
 7. Voordelen voor het team?
--
+- Paar zaken opgepakt
 
 
 (LEERDOEL 2) - Meer ervaring met het bouwen van de front-end van een website d.m.v. React
