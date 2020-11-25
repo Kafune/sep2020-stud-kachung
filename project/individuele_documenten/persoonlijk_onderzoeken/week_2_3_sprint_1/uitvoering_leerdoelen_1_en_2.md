@@ -26,14 +26,17 @@ Het efficient communiceren ligt meer aan de kant van mijn leerdoel, omdat duidel
 3. Hulp gevraagd?:
 - nog niet van toepassing
 4. Welke inzichten?
-- 
+- Initiatief nemen blijft lastig
+- Het is makkelijker om je verhaal kort te houden als je geen extra informatie erbij geeft als daar niet naar gevraagd wordt.
 5. Iets bijgesteld?:
 - Ik had eerst alleen duidelijker worden met communiceren als leerdoel, maar heb actieve communicatie erbij toegevoegd. Volgens mij zei Ritse dat ik voornamelijk aan de stille kant ben, dus ik denk dat het wel mooi zou zijn als ik mezelf iets erin kan verbeteren.
 6. Voordelen voor mezelf?
-- Begin te merken dat initiatief nemen makkelijker wordt. Zit minder te twijfelen om dat te doen
-- 
+- Begin te merken dat initiatief nemen iets makkelijker wordt. Zit nu minder te twijfelen om dat te doen
+- Het wordt makkelijker om mijn berichten kort te houden
+- Meer kansen om te communiceren
 7. Voordelen voor het team?
-- Paar zaken opgepakt
+- Een aantal taken opgepakt en afgehandeld
+
 
 
 (LEERDOEL 2) - Meer ervaring met het bouwen van de front-end van een website d.m.v. React
@@ -48,10 +51,10 @@ Het efficient communiceren ligt meer aan de kant van mijn leerdoel, omdat duidel
 3. Hulp gevraagd?:
 - Niet per se hulp gevraagd, maar tijdens het mergen wel gevraagd waarom iets anders aangepakt moest worden. Merging is gedaan door Alex.
 4. Welke inzichten?
-- 
+- Het beheren van lokale states in een component is lastig of bijna niet mogelijk zonder hooks
 5. Iets bijgesteld?:
 - Nee, dit leerdoel is voor mij wel duidelijk
 6. Voordelen voor mezelf?
-- Een keer een opzet gezet voor 
+- Een keer een opzet gezet voor de front-end van de website
 7. Voordelen voor het team?
 - Front-end opzet van Registratie en artikeloverzicht.
