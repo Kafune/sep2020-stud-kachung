@@ -36,10 +36,13 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren  | Taak                                                           | Met Wie       | Resultaat                                                                                     | Link                                                                                                                                         |
+|-------|----------------------------------------------------------------|---------------|-----------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
+| 1.5   | Programma sprint review demo                                   | Alleen        | Een stappenplan bij het leiden van de sprint review                                           | Teams: DWA sep 2020 Pardellos -> Bestanden                                                                                                   |
+| 1-2   | Software guidebook - c4 model en aantal hoofdstukken aangevuld | Ritse         | Software guidebook aantal beperkingen toegevoegd. Lastig om meer te bedenken zonder hele team | [Aantal beperkingen guidebook](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/56f0f013faef3b12ebe41e18e2991d6165e67e80)      |
+| 1.5   | User story - acceptatiecriteria                                | Steven        | User stories bevat aantal acceptatiecriteria en Definition of done items weggehaald           | [User stories](https://github.com/HANICA-DWA/sep2020-project-pardellos/projects/1)                                                           |
+| 1-1.5 | Laatste bug fixes                                              | Hele team     | Opslaan van artikel met extensie werkt                                                        | [Extensie fix](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/f83a00fa383c9b37bd0722f39a3607a0ba9f573d)                      |
+| 0.5   | C4 model afronden                                              | Ritse, Steven | Software guidebook aangevuld                                                                  | [Final software guidebook Sprint 1](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/c76326a3cb9087225d80d20a6fa49ca0d97596ea) |
 
 
 ## Vrijdag
