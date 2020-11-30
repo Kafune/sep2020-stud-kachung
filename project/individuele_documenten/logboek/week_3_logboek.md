@@ -48,7 +48,9 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Vrijdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                                                                                                                                     | Met Wie                    | Resultaat                                                                                                                             | Link |
+|------|------------------------------------------------------------------------------------------------------------------------------------------|----------------------------|---------------------------------------------------------------------------------------------------------------------------------------|------|
+| 1    | Voorbereiding demo -  Installatie extensie                                                                                               | Hele team                  | Installatie van de extensie repareren door imports van materialize weg te halen. Niet gepushed omdat er een git "freeze" plaatsvindt. |      |
+| 1.5  | Sprint review demo leiden                                                                                                                | Hele team en Product Owner | Veel feedback gehad van de Product Owner die wij voor de volgende sprint kunnen gebruiken                                             |      |
+| 2    | Sprint bord bijwerken -  Betere user stories en duidelijkere acceptatiecriteria voor de oude user stories / Nieuwe user stories bedenken | Hele team                  | Project bord is bijgewerkt voor de volgende sprint                                                                                    |      |
+| 1    | Sprint bord bijwerken -  Acceptatiecriteria en taken bedenken voor de settings menu - nieuwe user story                                  | Steven                     | Taken en acceptatiecriteria vastgesteld  voor dit specifieke user story                                                               |      |
