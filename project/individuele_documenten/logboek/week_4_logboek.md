@@ -16,10 +16,12 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Dinsdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                             | Met Wie | Resultaat                                                                 | Link                                                                                                             |
+|------|----------------------------------|---------|---------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
+| 1    | Unit tests uitzoeken             | Alleen  | Een idee van hoe unit tests in elkaar zit                                 |                                                                                                                  |
+| 0.25 | Settings dialog - kleine bug fix | Steven  | Kleur van de menu verandert op moment dat een thema is gekozen.           |                                                                                                                  |
+| 1    | Start unit tests op gebruiker    | Alleen  | Start tests op geldige email en gehashde wachtwoorden                     |                                                                                                                  |
+| 3    | Rest van unit tests uitschrijven | Ritse   | Tests op artikelen toevoegen aan een gebruiker en het toevoegen van tags. | [Tests](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/fb3b462e4aceaf6f2716d80718678ee12ee27f1f) |
 
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
