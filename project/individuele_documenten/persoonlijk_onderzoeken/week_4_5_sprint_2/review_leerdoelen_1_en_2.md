@@ -8,7 +8,7 @@ Ik heb op de volgende manier aan mijn leerdoelen gewerkt (vermeld afwijkingen op
 - (LEERDOEL 2) - Het uitzoeken en toepassen van de beste aanpak bij het maken van een bepaald component.
 
 Dit heeft de volgende resultaten opgeleverd:
-- (LEERDOEL 1) - De daily standups en standdowns liepen wel goed. De sprint review en de sprint planning kon wel wat beter. Het was voor de meeste van ons de eerste keer om echt met scrum te werken.
+- (LEERDOEL 1) - De daily standups en standdowns liepen wel goed. De sprint review en de sprint planning kon wel wat beter. Het was voor de meeste van ons de eerste keer om met scrum te werken.
 - (LEERDOEL 2) - Een aantal componenten gemaakt in de front-end van de website
 
 Dit ging goed:
@@ -20,7 +20,7 @@ Dit kon beter:
 - (LEERDOEL 2) - De verdeling van de state van de componenten, zodat componenten zoveel mogelijk zijn eigen verantwoordelijkheid heeft
 
 Ik heb mijn leerdoel wel/niet bereikt omdat:
-- (LEERDOEL 1) - Ik denk het wel, door het leiden van een daily standup en de sprint review heb ik wel meer inzicht gekregen bij het opnemen van die rol.
+- (LEERDOEL 1) - Ja denk het wel, door het leiden van een daily standup en de sprint review heb ik meer inzicht gekregen bij het opnemen van die rol, en heb ik meer kansen gekregen om te communiceren. Het initiatief van de leiding nemen voor de sprint review heb ik niet zelf gedaan, maar de leiding nemen voor de sprint planning wel.
 - (LEERDOEL 2) - Ik heb wel een keer aan de front-end gelukt, en het werk is ook daadwerkelijk in gebruik. Dus ik zou zeggen van wel.
 
 Het effect op mijn eigen ontwikkeling was:
