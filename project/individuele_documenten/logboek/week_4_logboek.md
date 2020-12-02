@@ -25,10 +25,12 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                                                       | Met Wie   | Resultaat                                                                    | Link |
+|------|------------------------------------------------------------|-----------|------------------------------------------------------------------------------|------|
+| 1    | Leerdoelen afmaken                                         | Alleen    | Leerdoelen zijn beter geformuleerd, maar nog niet helemaal af                |      |
+| 1    | Scrum coach meeting                                        | Hele team | Sprint review besproken, software guidebook besproken, Sprint bord besproken |      |
+| 1-2  | Leerdoelen afmaken en alvast naar nieuwe leerdoelen zoeken | Alleen    | Leerdoelen zijn af, maar ik kon nog geen nieuwe leerdoelen bedenken.         |      |
+| 1    | Skills docent meeting                                      | Hele team | Review van leerdoelen voor elk teamlid gehouden                              |      |
 
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
