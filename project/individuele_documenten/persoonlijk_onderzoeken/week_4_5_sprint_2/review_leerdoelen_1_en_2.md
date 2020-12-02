@@ -1,7 +1,7 @@
 Review individuele bijdrage professional skills
 
-(LEERDOEL 1) - Duidelijker worden met communiceren en meer actieve communicatie opleveren
-(LEERDOEL 2) - Meer ervaring met het bouwen van de front-end van een website d.m.v. React
+- (LEERDOEL 1) - Duidelijker worden met communiceren en meer actieve communicatie opleveren
+- (LEERDOEL 2) - Meer ervaring met het bouwen van de front-end van een website d.m.v. React
 
 Ik heb op de volgende manier aan mijn leerdoelen gewerkt (vermeld afwijkingen op de planning):
 - (LEERDOEL 1) - Een aantal daily standups en daily standdowns geleid. Daarnaast ook de Sprint review en Sprint planning geleid. Daarnaast ook wat meer initiatief getoond.
