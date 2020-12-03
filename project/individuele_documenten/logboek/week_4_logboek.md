@@ -36,10 +36,11 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren  | Taak                                                          | Met Wie                 | Resultaat                                                                                                                                               | Link                                                                                                                           |
+|-------|---------------------------------------------------------------|-------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 1-2   | Start onderzoek -  Opstellen mercury parser en article parser | Steven en Ritse         | Duurde mij lang om mercury-parser op te zetten, probeerde het met plain javascript op te stellen, maar create-react-app maakt het een stuk makkelijker. |                                                                                                                                |
+| 1-2   | Onderzoek - Vergelijken mercury parser en article parser      | Alleen, hulp van Steven | Verschillen tussen beide parsers is duidelijk                                                                                                           |                                                                                                                                |
+| 1.5-2 | Verslag van onderzoek uitschrijven                            | Alleen                  | Resultaat van onderzoek is af.                                                                                                                          | [Onderzoek resultaat](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/72e0a90aae7c47ab66dec5eda550b5b4d84aa931) |
 
 
 ## Vrijdag
