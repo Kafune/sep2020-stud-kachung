@@ -20,7 +20,7 @@ Dit kon beter:
 - (LEERDOEL 2) - De verdeling van de state van de componenten, zodat componenten zoveel mogelijk zijn eigen verantwoordelijkheid heeft
 
 Ik heb mijn leerdoel wel/niet bereikt omdat:
-- (LEERDOEL 1) - Ja denk het wel, door het leiden van een daily standup en de sprint review heb ik meer inzicht gekregen bij het opnemen van die rol, en heb ik meer kansen gekregen om te communiceren. Het initiatief van de leiding nemen voor de sprint review heb ik niet zelf gedaan, maar de leiding nemen voor de sprint planning wel.
+- (LEERDOEL 1) - Ja denk het wel, door het leiden van een daily standup en de sprint review heb ik meer inzicht gekregen bij het opnemen van die rol, en heb ik meer kansen gekregen om te communiceren. Het initiatief van de leiding nemen voor de sprint review heb ik niet zelf gedaan, maar de leiding nemen voor de sprint planning wel. Daarnaast heb ik van mijn teamleden meegekregen dat de daily standdown wel beter ging dan dat ik de eerste keer de daily standdown heb gedaan. Het ging een stuk sneller om langs iedereen te gaan, en ik kon mijn activiteiten ook beter doorgeven
 - (LEERDOEL 2) - Ik heb wel een keer aan de front-end gelukt, en het werk is ook daadwerkelijk in gebruik. Dus ik zou zeggen van wel.
 
 Het effect op mijn eigen ontwikkeling was:
