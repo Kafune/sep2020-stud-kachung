@@ -46,7 +46,8 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Vrijdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                              | Met Wie | Resultaat                                                                                                                                                           | Link                                                                                                                         |
+|------|-----------------------------------|---------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| 2    | Taken aan user stories vasthangen | Steven  | Alle user stories behalve US 20 hebben nu taken. Iemand is al met US 20 bezig. User story 13 heeft nu acceptatiecriteria.                                           | [project bord](https://github.com/HANICA-DWA/sep2020-project-pardellos/projects/1)                                           |
+| 2    | Workshop End to End testing       | Team    |                                                                                                                                                                     |                                                                                                                              |
+| 2-3  | Begin end to end testing          | Alleen  | Het registreren gaat opzich, maar ik heb de bijgewerkte versie van registratie nog niet. Bij login kan hij de input field niet vinden. Nog kijken waarom dit zo is. | [Begin e2e testing](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/673939516df458af73e92673931bad0e237574d3) |
