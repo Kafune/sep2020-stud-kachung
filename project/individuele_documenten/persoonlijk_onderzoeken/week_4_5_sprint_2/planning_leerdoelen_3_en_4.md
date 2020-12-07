@@ -2,7 +2,9 @@ Planning individuele bijdrage professional skills
 
 De komende vier weken ga ik met de volgende leerdoelen aan de slag:
 (LEERDOEL 1) 
+- Beginnen met persoonlijke dagplanning
 (LEERDOEL 2) 
+- 
 
 Mijn motivatie om aan deze leerdoelen te werken is:
 (LEERDOEL 1) 
