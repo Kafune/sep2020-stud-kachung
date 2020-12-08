@@ -2,36 +2,52 @@ Planning individuele bijdrage professional skills
 
 De komende vier weken ga ik met de volgende leerdoelen aan de slag:
 (LEERDOEL 1) 
-- Beginnen met persoonlijke dagplanning
+- Beginnen met het bijhouden van een persoonlijke planning voor het bijhouden van taken
 (LEERDOEL 2) 
-- Het verminderen van perfectionisme.
+- Het verminderen van perfectionistisch gedrag.
 
 Mijn motivatie om aan deze leerdoelen te werken is:
 (LEERDOEL 1) 
-- Ik hou in een dag nooit bij wat ik van tevoren ga doen. 
+- Ik heb eigelijk bijna nooit een planning bijgehouden. Ik denk dat een planning zou helpen met het geven van een betere overzicht op een werkdag. Ik vind het soms wel lastig om taken in te schatten van hoe lang een taak zou duren. Een planning zou me hierbij helpen. Een planning zou mij ook helpen bij het volgende leerdoel.
 (LEERDOEL 2) 
-- Als ik bezig ben met een taak, wil ik het ook echt perfect afmaken. Het probleem hierbij soms is dat het lastig kan zijn om dit te bereiken, waardoor ik onnodig veel tijd aan een bepaalde taak uitgeef, terwijl ik deze tijd ook aan taken zou kunnen werken met hogere prioriteit. Ik heb ook weleens de neiging om negatief te denken, en dat ik niet
+- Als ik bezig ben met een taak, wil ik het ook echt perfect afmaken. Het probleem hierbij soms is dat het lastig kan zijn om dit te bereiken, waardoor ik onnodig veel tijd aan een bepaalde taak uitgeef, terwijl ik in deze tijd ook aan taken zou kunnen werken met hogere prioriteit. Ook heb ik vaak de neiging om negatief te denken als iets mij niet echt lukt, terwijl dat misschien niet nodig is.
 
 Deze leerdoelen leveren het volgende op voor mij:
 (LEERDOEL 1) 
-(LEERDOEL 2) 
+- Mezelf forceren om vaker een planning te maken
+- Een beter overzicht van wat ik in een werkdag ga doen
+
+(LEERDOEL 2)
+- 
 
 Deze leerdoelen leveren het volgende op voor mijn team:
 (LEERDOEL 1) 
+- Een betere inschatting wanneer een taak klaar is.
 (LEERDOEL 2) 
+-
 
 Ik ga op de volgende manier(en) werken aan mijn leerdoelen:
 (LEERDOEL 1) 
+- Bij taken die ik alleen oppak, maak ik er een planning van
+- Eerst uitzoeken hoe moeilijk een taak is, dan inschatten hoeveel tijd het kost, en hoeveel tijd het daadwerkelijk heeft gekost.
+- Daarna reflecteren wat er goed en fout ging bij die taak.
 (LEERDOEL 2) 
 
 Om mijn leerdoelen te bereiken ga ik de volgende onderzoeken uitvoeren:
 (LEERDOEL 1) 
+- Algemene tips om een planning te maken. 
+- Misschien doelen in een planning SMART formuleren om daarmee te oefenen.
 (LEERDOEL 2) 
 
 Om mijn leerdoelen te bereiken ga ik hulp vragen aan de volgende personen:
 (LEERDOEL 1) 
+- Andere teamleden die al vaker met een planning heeft gewerkt.
+- Eventueel een docent
 (LEERDOEL 2) 
 
 Ik heb mijn leerdoelen bereikt als (formuleer meetbare criteria):
 (LEERDOEL 1) 
+- Minimaal 3 planningen heb gemaakt van verschillende taken
+- Minstens 1 keer een taak correct heb ingeschat bij het 
+
 (LEERDOEL 2) 
