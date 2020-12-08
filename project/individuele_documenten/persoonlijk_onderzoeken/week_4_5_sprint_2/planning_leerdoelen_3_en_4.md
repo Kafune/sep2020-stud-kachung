@@ -4,11 +4,12 @@ De komende vier weken ga ik met de volgende leerdoelen aan de slag:
 (LEERDOEL 1) 
 - Beginnen met persoonlijke dagplanning
 (LEERDOEL 2) 
-- 
+- Te perfectionistisch
 
 Mijn motivatie om aan deze leerdoelen te werken is:
 (LEERDOEL 1) 
 (LEERDOEL 2) 
+- Als ik bezig ben met een taak, wil ik het ook echt perfect afmaken. Het probleem hierbij soms is dat het lastig kan zijn om dit te bereiken, waardoor ik onnodig veel tijd aan een bepaalde taak uitgeef, terwijl ik deze tijd ook aan taken zou kunnen werken met hogere prioriteit.
 
 Deze leerdoelen leveren het volgende op voor mij:
 (LEERDOEL 1) 
