@@ -14,18 +14,18 @@ Mijn motivatie om aan deze leerdoelen te werken is:
 
 Deze leerdoelen leveren het volgende op voor mij:
 (LEERDOEL 1) 
-- Taken beter kunnen verdelen
+- Vaardigheid bij het maken van een planning verbeteren
 - Een beter overzicht van wat ik in een werkdag ga doen
 
 (LEERDOEL 2)
-- Ik kan beter inschatten wat mogelijk is en wat heel lastig of zelfs onmogelijk is
-- Prioriteiten stellen bij taken
+- Ik kan beter inschatten wat mogelijk is en wat heel lastig of zelfs onmogelijk is bij een doel/taak
+- Ik kan beter prioriteiten stellen
 
 Deze leerdoelen leveren het volgende op voor mijn team:
 (LEERDOEL 1) 
 - Een betere inschatting wanneer een taak klaar is.
 (LEERDOEL 2) 
-- Mijn werk wordt efficiënter uitgevoerd.
+- Mijn werk voer ik efficiënter uit.
 
 Ik ga op de volgende manier(en) werken aan mijn leerdoelen:
 (LEERDOEL 1) 
