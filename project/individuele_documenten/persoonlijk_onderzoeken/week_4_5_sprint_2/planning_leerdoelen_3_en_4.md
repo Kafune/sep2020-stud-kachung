@@ -4,7 +4,7 @@ De komende vier weken ga ik met de volgende leerdoelen aan de slag:
 (LEERDOEL 1) 
 - Beginnen met het bijhouden van een persoonlijke planning voor het bijhouden van taken
 (LEERDOEL 2) 
-- Het verminderen van perfectionistisch gedrag.
+- Het verminderen/afleren van perfectionistisch gedrag.
 
 Mijn motivatie om aan deze leerdoelen te werken is:
 (LEERDOEL 1) 
@@ -24,7 +24,7 @@ Deze leerdoelen leveren het volgende op voor mijn team:
 (LEERDOEL 1) 
 - Een betere inschatting wanneer een taak klaar is.
 (LEERDOEL 2) 
--
+- 
 
 Ik ga op de volgende manier(en) werken aan mijn leerdoelen:
 (LEERDOEL 1) 
@@ -38,16 +38,21 @@ Om mijn leerdoelen te bereiken ga ik de volgende onderzoeken uitvoeren:
 - Algemene tips om een planning te maken. 
 - Misschien doelen in een planning SMART formuleren om daarmee te oefenen.
 (LEERDOEL 2) 
+- Artikelen over perfectionistisch gedrag zoeken en de advies daarvan toepassen
 
 Om mijn leerdoelen te bereiken ga ik hulp vragen aan de volgende personen:
 (LEERDOEL 1) 
 - Andere teamleden die al vaker met een planning heeft gewerkt.
 - Eventueel een docent
 (LEERDOEL 2) 
+- Als eerst zelf proberen om dit af te leren.
+- Andere teamleden vragen als dit mij niet lukt
 
 Ik heb mijn leerdoelen bereikt als (formuleer meetbare criteria):
 (LEERDOEL 1) 
 - Minimaal 3 planningen heb gemaakt van verschillende taken
-- Minstens 1 keer een taak correct heb ingeschat bij het 
+- Minstens 1 keer een taak goed heb ingeschat in mijn planning. Een uur er naast zitten is niet zo erg.
 
 (LEERDOEL 2) 
+- Tijdens het maken van de planning, heb ik bij minimaal 1 taak haalbare doelen beschreven en behaald.
+- ik minder kritisch op mezelf ben
