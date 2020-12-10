@@ -38,10 +38,11 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                                                | Met Wie | Resultaat                                                                            | Link                                                                                                                                  |
+|------|-----------------------------------------------------|---------|--------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------|
+| 1-2  | Software guidebook -  C4 model Laterlezer web app   | Alleen  | Web app component in c4 model klaar                                                  | [Web app component c4 model](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/aef8df6621e8c02148bd27334d06de9ad5ecdfc1) |
+| 1    | Testen van het zoeken op auteur                     | Steven  | Alleen meegekeken, maar het lukt bij Steven niet om het zoeken van auteur te testen. |                                                                                                                                       |
+| 1-2  | Software guidebook -  C4 model Laterlezer User flow | Alleen  | User flow is in het c4 model opgenomen als component                                 | [User flow diagram](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/6778896bddb48bc71e451b821e76455ea38e4a0b)          |
 
 
 ## Vrijdag
