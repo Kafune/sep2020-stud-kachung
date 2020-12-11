@@ -48,7 +48,9 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Vrijdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren     | Taak                                                                 | Met Wie                                 | Resultaat                                                                                              | Link                                                                                                                              |
+|----------|----------------------------------------------------------------------|-----------------------------------------|--------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------|
+| 0.25-0.5 | Extensie testen                                                      | Alleen                                  | Ingelogd blijven in de extensie en het toevoegen van tags aan een artikel werkt nog niet. De rest wel. |                                                                                                                                   |
+| 0.5-1    | Hele applicatie testen                                               | Hele team                               | Alle stukken die niet werkte, opschrijven en meenemen voor sprint review.                              |                                                                                                                                   |
+| 1        | Hoofdstukken infrastructuur, deployment en API development aangevuld | Alleen                                  | Software guidebook is up to date nu.                                                                   | [Guidebook aanvullingen](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/c6738a8d4108b102e0df521dbed922b55c9eaafb) |
+| 1.5      | Sprint review - Notulist                                             | Hele team, Scrum coach en Product Owner | Sprint review feedback ontvangen                                                                       |                                                                                                                                   |
