@@ -23,8 +23,8 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
   - (LEERDOEL 1) 
   - (LEERDOEL 2) 
 
-(LEERDOEL 1) 
+(LEERDOEL 1) Dagplanning bijhouden bij taken
 
 
-(LEERDOEL 2) 
+(LEERDOEL 2) Verminderen/afleren van perfectionistisch gedrag
 
