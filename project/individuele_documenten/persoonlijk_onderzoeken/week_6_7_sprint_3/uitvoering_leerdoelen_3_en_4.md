@@ -1,7 +1,7 @@
 Uitvoering individuele bijdrage professional skills
 
-(LEERDOEL 1) Dagplanning bijhouden bij taken
-(LEERDOEL 2) Verminderen/afleren van perfectionistisch gedrag
+- (LEERDOEL 1) Persoonlijke dagplanning bijhouden voor taken
+- (LEERDOEL 2) Verminderen/afleren van perfectionistisch gedrag
 
 Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Hoe heb je het aangepakt?
