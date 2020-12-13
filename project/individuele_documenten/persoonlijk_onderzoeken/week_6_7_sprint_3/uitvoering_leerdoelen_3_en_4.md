@@ -2,12 +2,26 @@ Uitvoering individuele bijdrage professional skills
 
 Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Hoe heb je het aangepakt?
+  - (LEERDOEL 1) 
+  - (LEERDOEL 2) 
 - Welke vormen van onderzoek heb je gedaan?
+  - (LEERDOEL 1) 
+  - (LEERDOEL 2) 
 - Wie heb je om hulp gevraagd?
+  - (LEERDOEL 1) 
+  - (LEERDOEL 2) 
 - Tot welke inzichten ben je gekomen?
+  - (LEERDOEL 1) 
+  - (LEERDOEL 2) 
 - Heb je iets bijgesteld? Waarom?
+  - (LEERDOEL 1) 
+  - (LEERDOEL 2) 
 - Wat heeft het opgeleverd voor jou?
+  - (LEERDOEL 1) 
+  - (LEERDOEL 2) 
 - Wat heeft het opgeleverd voor je team?
+  - (LEERDOEL 1) 
+  - (LEERDOEL 2) 
 
 (LEERDOEL 1) 
 
