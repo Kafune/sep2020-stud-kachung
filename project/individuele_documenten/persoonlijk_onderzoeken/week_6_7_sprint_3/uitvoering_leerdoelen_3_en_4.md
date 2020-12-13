@@ -29,3 +29,9 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 
 
 [Table editor planning](https://www.tablesgenerator.com/markdown_tables) 
+
+## Maandag
+| Taak | Stappen om te nemen | Geschatte uren | Daadwerkelijke uren | Gehaald? | Notities |
+|------|---------------------|----------------|---------------------|----------|----------|
+|      |                     |                |                     |          |          |
+|      |                     |                |                     |          |          |
