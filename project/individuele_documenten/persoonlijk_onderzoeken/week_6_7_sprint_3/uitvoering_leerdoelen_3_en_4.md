@@ -11,13 +11,30 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     - Nog niks
 - Welke vormen van onderzoek heb je gedaan?
   - (LEERDOEL 1) 
+    - https://www.stuvia.nl/knowledge-base/studeertips/hoe-kun-je-een-goede-studieplanning-maken/
+    - https://www.examenoverzicht.nl/examen-informatie/leren/planning-maken
+      - Deze tips toepassen bij het plannen van de taken
+    - https://www.brightdevelopers.com/benefits-planning-ahead-software-development/
+      - Waarom het handig is om van tevoren te plannen
+
   - (LEERDOEL 2) 
+    - http://www.carrieretijger.nl/functioneren/professionele-eigenschappen/perfectionisme
+    - https://www.desteven.nl/persoonlijke-ontwikkeling/kernkwaliteiten/accuraat/perfectionisme
+    - https://conciencia-coaching.nl/gedachten-en-gedrag/5-nadelen-van-perfectionisme/
 - Wie heb je om hulp gevraagd?
   - (LEERDOEL 1) 
-  - (LEERDOEL 2) 
+    - Nog niemand
+  - (LEERDOEL 2)
+    - Nog niemand
 - Tot welke inzichten ben je gekomen?
   - (LEERDOEL 1) 
+    - Maak eerst een lijst van taken die er vandaag moet gebeuren. Vaak is dat 1 taak, en soms meerdere taken
+    - 
   - (LEERDOEL 2) 
+    - Het is niet per se slecht om perfecetionistisch te zijn
+    - Het is beter om onzekerheden na te vragen dan zelf te lang op het perfecte oplossing te zoeken
+    
+    
 - Heb je iets bijgesteld? Waarom?
   - (LEERDOEL 1) 
   - (LEERDOEL 2) 
@@ -26,13 +43,15 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
   - (LEERDOEL 2) 
 - Wat heeft het opgeleverd voor je team?
   - (LEERDOEL 1) 
+    - nog niks
   - (LEERDOEL 2) 
+    - nog niks
 
 
 
 [Table editor planning](https://www.tablesgenerator.com/markdown_tables) 
 
-## Maandag
+## 
 | Taak | Stappen om te nemen | Geschatte uren | Daadwerkelijke uren | Gehaald? | Notities |
 |------|---------------------|----------------|---------------------|----------|----------|
 |      |                     |                |                     |          |          |
