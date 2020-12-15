@@ -7,6 +7,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Hoe heb je het aangepakt?
   - (LEERDOEL 1) 
     - In github een planning in de vorm van een tabel gemaakt.
+    - Nog geen planning gemaakt
   - (LEERDOEL 2) 
     - Nog niks
 - Welke vormen van onderzoek heb je gedaan?
