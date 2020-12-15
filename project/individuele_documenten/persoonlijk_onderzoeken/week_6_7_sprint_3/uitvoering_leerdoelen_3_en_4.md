@@ -39,10 +39,14 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     
 - Heb je iets bijgesteld? Waarom?
   - (LEERDOEL 1) 
+    - Nee
   - (LEERDOEL 2) 
+    - Nee
 - Wat heeft het opgeleverd voor jou?
   - (LEERDOEL 1) 
+    - Weet ik nog niet
   - (LEERDOEL 2) 
+    - Weet ik nog niet
 - Wat heeft het opgeleverd voor je team?
   - (LEERDOEL 1) 
     - nog niks
