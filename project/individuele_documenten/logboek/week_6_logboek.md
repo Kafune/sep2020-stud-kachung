@@ -16,10 +16,10 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Dinsdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren  | Taak                                                                               | Met Wie | Resultaat                                                                              | Link                                                                                                                   |
+|-------|------------------------------------------------------------------------------------|---------|----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
+| 2     | Opstarten                                                                          | Alleen  | Het was lastig voor mij om op te starten, omdat ik me niet lekker voelde in de ochtend |                                                                                                                        |
+| 2.5-3 | Alle zoekvelden bij elkaar voegen om het zoeken van artikelen makkelijker te maken | Steven  | Zoeken op titel, beschrijving, bron en auteur met 1 zoekknop werkt nu.                 | [Zoeksysteem](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/2620a188f3a828dccc1121d7d54481d4e7c1070c) |
 
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
