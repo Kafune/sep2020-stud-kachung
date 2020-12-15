@@ -29,7 +29,8 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Tot welke inzichten ben je gekomen?
   - (LEERDOEL 1) 
     - Maak eerst een lijst van taken die er vandaag moet gebeuren. Vaak is dat 1 taak, en soms meerdere taken
-    - 
+    - Deel de taken op in kleine subtaken om de taak beter in te schatten
+    - Stel de prioriteit 
   - (LEERDOEL 2) 
     - Het is niet per se slecht om perfecetionistisch te zijn
     - Het is beter om onzekerheden na te vragen dan zelf te lang op het perfecte oplossing te zoeken
