@@ -23,7 +23,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     - https://conciencia-coaching.nl/gedachten-en-gedrag/5-nadelen-van-perfectionisme/
 - Wie heb je om hulp gevraagd?
   - (LEERDOEL 1) 
-    - Nog niemand
+    - Steven
   - (LEERDOEL 2)
     - Nog niemand
 - Tot welke inzichten ben je gekomen?
