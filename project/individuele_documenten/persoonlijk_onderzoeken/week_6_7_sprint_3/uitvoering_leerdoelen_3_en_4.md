@@ -52,7 +52,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 [Table editor planning](https://www.tablesgenerator.com/markdown_tables) 
 
 ## 
-| Taak | Stappen om te nemen | Geschatte uren | Daadwerkelijke uren | Gehaald? | Notities |
-|------|---------------------|----------------|---------------------|----------|----------|
-|      |                     |                |                     |          |          |
-|      |                     |                |                     |          |          |
+| Taak | Stappen om te nemen | Prioriteit | Geschatte uren | Daadwerkelijke uren | Gehaald? | Notities |
+|------|---------------------|------------|----------------|---------------------|----------|----------|
+|      |                     |            |                |                     |          |          |
+|      |                     |            |                |                     |          |          |
