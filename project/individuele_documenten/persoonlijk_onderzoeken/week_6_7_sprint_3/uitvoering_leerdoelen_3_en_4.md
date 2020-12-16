@@ -48,7 +48,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
   - (LEERDOEL 1) 
     - nog niks
   - (LEERDOEL 2) 
-    - Mijn werk is 
+    - Mijn werk is eerder klaar
 
 
 
