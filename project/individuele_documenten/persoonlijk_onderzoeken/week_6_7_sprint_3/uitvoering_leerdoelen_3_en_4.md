@@ -32,7 +32,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     - Hou rekening met externe factoren tijdens het plannen
   - (LEERDOEL 2) 
     - Het is niet per se slecht om perfecetionistisch te zijn
-    - Het is beter om onzekerheden na te vragen dan zelf te lang op de perfecte oplossing te zoeken
+    - Het is beter om onzekerheden sneller na te vragen dan zelf te lang op de perfecte oplossing te zoeken
     
 - Heb je iets bijgesteld? Waarom?
   - (LEERDOEL 1) 
@@ -42,13 +42,14 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Wat heeft het opgeleverd voor jou?
   - (LEERDOEL 1) 
     - Beter overzicht van welke stappen ik moet nemen om een taak te voltooien
+    - Werkproces meer efficient
   - (LEERDOEL 2) 
     - Minder lang vastgezeten aan een probleem, waardoor ik sneller verder kan
 - Wat heeft het opgeleverd voor je team?
   - (LEERDOEL 1) 
-    - nog niks
+    - Door betere werkproces meer productiviteit
   - (LEERDOEL 2) 
-    - Mijn werk is eerder klaar
+    - Meer tijd over om meerdere taken op te pakken
 
 
 
