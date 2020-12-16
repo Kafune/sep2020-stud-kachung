@@ -9,6 +9,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     - In github een planning in de vorm van een tabel gemaakt.
     - Een taak in dat tabel ingepland
   - (LEERDOEL 2) 
+    - Sneller naar een ander taak overstappen
     - Sneller aan de bel trekken als ik ergens mee vastloop
     
 - Welke vormen van onderzoek heb je gedaan?
