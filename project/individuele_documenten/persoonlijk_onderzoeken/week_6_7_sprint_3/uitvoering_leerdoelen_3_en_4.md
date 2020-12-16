@@ -10,6 +10,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     - Een taak in dat tabel ingepland
   - (LEERDOEL 2) 
     - Sneller aan de bel trekken als ik ergens mee vastloop
+    
 - Welke vormen van onderzoek heb je gedaan?
   - (LEERDOEL 1) 
     - https://www.stuvia.nl/knowledge-base/studeertips/hoe-kun-je-een-goede-studieplanning-maken/
@@ -49,7 +50,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
   - (LEERDOEL 1) 
     - Door betere werkproces meer productiviteit
   - (LEERDOEL 2) 
-    - Meer tijd over om meerdere taken op te pakken
+    - Meer tijd over omdat ik minder lang vastloop op een taak
 
 
 
