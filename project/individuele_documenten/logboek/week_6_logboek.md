@@ -24,10 +24,12 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                 | Met Wie                    | Resultaat                                                            | Link                                                                                                                            |
+|------|----------------------|----------------------------|----------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| 2    | Leerdoelen bijwerken | Alleen                     | Leerdoelen zijn grotendeels bijgewerkt, maar nog niet af             | [Bijgewerkte leerdoelen](https://github.com/HANICA-DWA/sep2020-stud-kachung-li/commit/401e835c826e095e9681adb8cfe8487ebe0887bf) |
+| 1.5  | Sprint planning      | Hele team en Product owner | Sprint planning voorgelegd en feedback terug gekregen van wireframes |                                                                                                                                 |
+| 1    | Leerdoelen bijwerken | Alleen                     | Voorbereid voor het gesprek met de skills docent                     | [Bijgewerkte leerdoelen](https://github.com/HANICA-DWA/sep2020-stud-kachung-li/commit/401e835c826e095e9681adb8cfe8487ebe0887bf) |
+| 0.75 | Leerdoelen bespreken | Hele team en skills docent | Voortgang leerdoelen zijn besproken. Ging goed voor iedereen.        |                                                                                                                                 |
 
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
