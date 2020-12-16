@@ -7,17 +7,16 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
 - Hoe heb je het aangepakt?
   - (LEERDOEL 1) 
     - In github een planning in de vorm van een tabel gemaakt.
-    - Nog geen planning gemaakt
+    - Een taak in dat tabel ingepland
   - (LEERDOEL 2) 
-    - Nog niks
+    - Sneller aan de bel trekken als ik ergens mee vastloop
 - Welke vormen van onderzoek heb je gedaan?
   - (LEERDOEL 1) 
     - https://www.stuvia.nl/knowledge-base/studeertips/hoe-kun-je-een-goede-studieplanning-maken/
     - https://www.examenoverzicht.nl/examen-informatie/leren/planning-maken
-      - Deze tips toepassen bij het plannen van de taken
+      - Algemene tips bij het plannen van taken
     - https://www.brightdevelopers.com/benefits-planning-ahead-software-development/
-      - Waarom het handig is om van tevoren te plannen
-
+      - Waarom het handig is om van tevoren te plannen in een development omgeving
   - (LEERDOEL 2) 
     - http://www.carrieretijger.nl/functioneren/professionele-eigenschappen/perfectionisme
     - https://www.desteven.nl/persoonlijke-ontwikkeling/kernkwaliteiten/accuraat/perfectionisme
@@ -29,13 +28,11 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     - Nog niemand
 - Tot welke inzichten ben je gekomen?
   - (LEERDOEL 1) 
-    - Maak eerst een lijst van taken die er vandaag moet gebeuren. Vaak is dat 1 taak, en soms meerdere taken
-    - Deel de taken op in kleine subtaken om de taak beter in te schatten
-    - Stel de prioriteit 
+    - Maak eerst een lijst van taken die er in een dag moet gebeuren. Vaak is dat 1 taak bij mij, en soms meerdere taken. Bij meerdere taken prioriteiten stellen
+    - Hou rekening met externe factoren tijdens het plannen
   - (LEERDOEL 2) 
     - Het is niet per se slecht om perfecetionistisch te zijn
-    - Het is beter om onzekerheden na te vragen dan zelf te lang op het perfecte oplossing te zoeken
-    
+    - Het is beter om onzekerheden na te vragen dan zelf te lang op de perfecte oplossing te zoeken
     
 - Heb je iets bijgesteld? Waarom?
   - (LEERDOEL 1) 
@@ -44,21 +41,21 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
     - Nee
 - Wat heeft het opgeleverd voor jou?
   - (LEERDOEL 1) 
-    - Weet ik nog niet
+    - Beter overzicht van welke stappen ik moet nemen om een taak te voltooien
   - (LEERDOEL 2) 
-    - Weet ik nog niet
+    - Minder lang vastgezeten aan een probleem, waardoor ik sneller verder kan
 - Wat heeft het opgeleverd voor je team?
   - (LEERDOEL 1) 
     - nog niks
   - (LEERDOEL 2) 
-    - nog niks
+    - Mijn werk is 
 
 
 
 [Table editor planning](https://www.tablesgenerator.com/markdown_tables) 
 
 ## 
-| Taak | Stappen om te nemen | Prioriteit | Geschatte uren | Daadwerkelijke uren | Gehaald? | Notities |
-|------|---------------------|------------|----------------|---------------------|----------|----------|
-|      |                     |            |                |                     |          |          |
-|      |                     |            |                |                     |          |          |
+| Taak                                                           | Subtaken                                                                                                                                                                                                                                                                                                                                                | Prioriteit | Geschatte uren | Daadwerkelijke uren | Gehaald? | Notities                                                                                 |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|----------------|---------------------|----------|------------------------------------------------------------------------------------------|
+| Samenvoegen van alle zoekvelden bij het zoeken van een artikel | - Alle zoekvelden tonen op de pagina - Zorg dat alle zoekvelden alle invoer opslaat in zijn state - Neem de invoer van de gebruiker mee naar de request naar de API - Query schrijven in de backend om het zoeken van artikelen flexibel te maken, zodat een invoerveld niet per se verplicht is - De query zelf schrijven - Correcte artikelen ophalen | Hoog       | 1-2 uur        | 4 uur               | Nee      | Voelde niet lekker in de ochtend, waardoor het langer duurde om te starten met mijn taak |
+|                                                                |                                                                                                                                                                                                                                                                                                                                                         |            |                |                     |          |                                                                                          |
