@@ -34,10 +34,11 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Donderdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                                        | Met Wie | Resultaat                                                                                                                                                                               | Link                                                                                                                                 |
+|------|---------------------------------------------|---------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------|
+| 1    | Wireframes verbeteren                       | Alleen  | Wireframes zijn verbeterd. Team om feedback gevraagd en zij vonden de eerste wireframe wel beter eruit zien.                                                                            | [Wireframes en zoekfunctie](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/e2968bad34b079b88a61eaab9e6d4c4aa9df40c4) |
+| 4    | Verbeteren van zoekfunctie                  | Alleen  | Zoeken is nu mogelijk op 1 zoekveld. Het is mogelijk om ook op content te zoeken als de gebruiker dat wilt. Hulp gekregen van Steven                                                    | [Wireframes en zoekfunctie](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/e2968bad34b079b88a61eaab9e6d4c4aa9df40c4) |
+| 0.5  | Front-end - mogelijkheid voor meerdere tags | Alleen  | Even gekeken hoe meerdere parent tags op de front-end mogelijk is. Ritse heeft hier al een lange tijd naar gekeken. Ik heb nu voorgenomen om daar niet al te veel tijd aan uit te geven |                                                                                                                                      |
 
 
 ## Vrijdag
