@@ -44,7 +44,9 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Vrijdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren | Taak                                                | Met Wie | Resultaat                                                                                                                                                          | Link                                                                                                                                             |
+|------|-----------------------------------------------------|---------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------|
+| 1    | Wireframes bijwerken                                | Alleen  | Wireframes op basis van feedback van de sprint review bijgewerkt                                                                                                   | [bijgewerkte wireframes](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/911a0e181ccc97b90ac642983078024234c3e5a2)                |
+| 2    | Projectbord bijwerken                               | Alleen  | Duidelijkere acceptatiecriteria bij bestaande user stories, nieuwe user stories en bijbehorende acceptatiecriteria toegevoegd. Mail naar PO gestuurd voor feedback | [Sprint 3 bijgewerkte bord](https://github.com/HANICA-DWA/sep2020-project-pardellos/projects/1)                                                  |
+| 1.5  | Projectbord bijwerken na aanleiding van feedback PO | Steven  | Veel feedback gekregen van de PO. Alle user stories en acceptatiecriteria bijgewerkt op basis van de feedback van de PO.                                           | [Bijgewerkte bord](https://github.com/HANICA-DWA/sep2020-project-pardellos/projects/1)                                                           |
+| 1    | Wireframes bijwerken                                | Alleen  | Wireframes zijn bijgewerkt na feedback van de PO.                                                                                                                  | [Bijgewerkte wireframes na feedback PO](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/f6aab663c757d3c03ceda22cfe696cde068b5382) |
