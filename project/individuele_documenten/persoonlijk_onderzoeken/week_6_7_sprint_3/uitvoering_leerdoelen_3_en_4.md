@@ -35,6 +35,7 @@ Beschrijf wat je hebt gedaan om te werken aan je persoonlijke leerdoelen:
   - (LEERDOEL 2) 
     - Het is niet per se slecht om perfecetionistisch te zijn
     - Het is beter om onzekerheden sneller na te vragen dan zelf te lang op de perfecte oplossing te zoeken
+    - Als iemand anders naar mijn probleem kijkt, dan is de kans veel hoger dat een probleem opgelost wordt
     
 - Heb je iets bijgesteld? Waarom?
   - (LEERDOEL 1) 
