@@ -23,9 +23,9 @@ Ik heb mijn leerdoel wel/niet bereikt omdat:
 - (LEERDOEL 2) Opzich wel, ik ben richting het einde van de periode minder kritisch geweest met het zoeken van oplossingen, en ik heb wat vaker om hulp gevraagd. Had bij deze leerdoel niet echt een meetbare criteria beschreven.
 
 Het effect op mijn eigen ontwikkeling was:
-(LEERDOEL 1) 
-(LEERDOEL 2) 
+- (LEERDOEL 1) 
+- (LEERDOEL 2) 
 
 Het effect op het groepsproces was:
-(LEERDOEL 1) 
-(LEERDOEL 2) 
+- (LEERDOEL 1) 
+- (LEERDOEL 2) 
