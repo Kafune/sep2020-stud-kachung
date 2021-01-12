@@ -17,10 +17,11 @@ Eventueel informatieve algemene opmerkingen over deze dag.
 ## Dinsdag
 Eventueel informatieve algemene opmerkingen over deze dag.
 
-| Uren | Taak | Met Wie | Resultaat | Link |
-|------|------|---------|-----------|------|
-|  |  |  |  |  |
-|  |  |  |  |  |
+| Uren  | Taak                    | Met Wie | Resultaat                                                                                                                                                                        | Link                                                                                                                           |
+|-------|-------------------------|---------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| 0.5   | Extensie css aanpassing | Steven  | Het is nu duidelijk dat de gebruiker de URL niet aan kan passen bij de extensie.                                                                                                 |                                                                                                                                |
+| 1.5-2 | Unit tests fix          | Steven  | De tests bij het zoeken van artikelen en het bewerken van artikelen werkt nu. Er stonden meerdere accounts in de database met dezelfde email, waardoor de test niet goed werkte. |                                                                                                                                |
+| 2-3   | Code refactor           | Steven  | De code iets korter en netter gemaakt in de componenten Login en search article. Ook een aantal CSS aanpassingen gedaan.                                                         | [Small code refactor](https://github.com/HANICA-DWA/sep2020-project-pardellos/commit/0d4a43e173d30d55bfb3c07f89dfebec932cd335) |
 
 ## Woensdag
 Eventueel informatieve algemene opmerkingen over deze dag.
