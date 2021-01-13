@@ -12,7 +12,7 @@ Dit heeft de volgende resultaten opgeleverd:
 
 Dit ging goed:
 - (LEERDOEL 1) Mijn schattingen tijdens het plannen ging steeds beter over de periode heen
-- (LEERDOEL 2) 
+- (LEERDOEL 2) Ik kon sneller naar een ander taak. Ik liep niet te lang vast aan een taak.
 
 Dit kon beter:
 - (LEERDOEL 1) Kon ook wel proberen om planningen te maken voor taken waar ik niet individueel mee bezig ben geweest.
